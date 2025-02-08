@@ -26,8 +26,8 @@ export default function Navbar() {
 					</ul>
 				))}
 
-				<div className="flex items-center justify-center mx-auto">
-					<input type="search" placeholder="Find Blog" />
+				<div className="flex items-cente gap-2  justify-center mx-auto">
+					<input type="search" className="border-black border-2 border-solid" placeholder="Find Blog" />
 					<button type="submit">Get in Touch</button>
 				</div>
 
