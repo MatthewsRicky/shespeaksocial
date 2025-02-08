@@ -28,7 +28,7 @@ export default function Navbar() {
 
 				<div className="flex items-cente gap-2  justify-center mx-auto">
 					<input type="search" className="border-black border-2 border-solid" placeholder="Find Blog" />
-					<button type="submit">Get in Touch</button>
+					<button type="submit" className="bg-pink-500 px-3 shadow-lg shadow-pink-400 py-2 rounded-lg">Get in Touch</button>
 				</div>
 
 			</div>
