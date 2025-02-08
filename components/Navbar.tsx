@@ -17,8 +17,8 @@ export default function Navbar() {
 				</Link>
 
 				{navLinks.map((link) => (
-					<ul key={link} className="flex items-center justify-center mx-auto">
-						<li className="flex items-center justify-center px-3 py-2">
+					<ul key={link} className="flex items-center justify-between mx-auto gap-4">
+						<li className="flex items-center justify-around mx-auto px-3 py-2">
 							<Link href="/">
 								{link}
 							</Link>
