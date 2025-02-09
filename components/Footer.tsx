@@ -1,4 +1,6 @@
 import React from 'react'
+import {FaFacebook, FaThreads, FaXTwitter} from "react-icons/fa6";
+import {FaInstagramSquare} from "react-icons/fa";
 
 const Footer = () => {
 	return (
@@ -12,6 +14,20 @@ const Footer = () => {
 							innovation, and social empowerment,
 							differentiating us in the market as not just service providers but as change-makers</article>
 						<h2>Follow Us</h2>
+						<ul>
+							<li>
+								<FaFacebook />
+							</li>
+							<li>
+								<FaXTwitter />
+							</li>
+							<li>
+								<FaInstagramSquare />
+							</li>
+							<li>
+								<FaThreads />
+							</li>
+						</ul>
 					</div>
 					<div></div>
 					<div></div>
