@@ -7,9 +7,9 @@ const Footer = () => {
 
 
 		<section
-			className="flex flex-col items-center justify-center mx-0 bg-slate-900 text-white w-full gap-6">
+			className="flex flex-col items-center justify-center mx-0 bg-slate-900 text-white w-full">
 			<div>
-				<div>
+				<div className="flex">
 					<div>
 						<h1>About Us</h1>
 						<article>We are known for our creativity, precision, and impact.
