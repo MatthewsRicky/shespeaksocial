@@ -7,7 +7,7 @@ const Footer = () => {
 
 
 		<section
-			className="flex flex-col items-center justify-center mx-0 bg-slate-900 text-white w-full">
+			className="flex flex-col items-center gap-6 justify-center mx-0 bg-slate-900 text-white w-full">
 			<div>
 				<div className="flex">
 					<div>
