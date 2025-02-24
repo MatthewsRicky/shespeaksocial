@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Navbar() {
 
-	const navLinks = ["Home", "About", "Blog", "For Business", "For Individuals", "Resources"];
+	const navLinks = ["home", "about", "blog", "for Business", "for Individuals", "resources"];
 
 	return (
 		<>
@@ -19,7 +19,7 @@ export default function Navbar() {
 				{navLinks.map((link) => (
 					<ul key={link} className="flex items-center justify-between mx-auto gap-4">
 						<li className="flex items-center justify-around mx-auto px-3 py-2">
-							<Link href="/">
+							<Link href={"/" + link}>
 								{link}
 							</Link>
 						</li>
