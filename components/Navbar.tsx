@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Navbar() {
 
-	const navLinks = ["home", "about", "blog", "for Business", "for Individuals", "resources"];
+	const navLinks = [ "about", "blog", "payment", "for-business", "for Individuals", "resources"];
 
 	return (
 		<>
