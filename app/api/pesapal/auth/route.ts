@@ -1,11 +1,14 @@
-import React from 'react'
-import { NextResponse} from "next/server";
+import { NextResponse } from 'next/server';
 
-export async function POST() {
-	const PESAPAL_URL = process.env.PESAPAL_URL;
+export async function POST(): Promise<NextResponse> {
+	const PESAPAL_URL = "https://cybqa.pesapal.com/pesapalv3/api/Auth/RequestToken"; // Sandbox URL
 
-	const consumerKey = process.env.CONSUMER_KEY;
-	const consumerSecret = process.env.CONSUMER_SECRET;
+	const consumerKey: string | undefined = process.env.PESAPAL_CONSUMER_KEY;
+	const consumerSecret: string | undefined = process.env.PESAPAL_CONSUMER_SECRET;
+
+	if (!consumerKey || !consumerSecret) {
+		return NextResponse.json({ error: "Missing Pesapal API credentials" }, { status: 500 });
+	}
 
 	const authPayload = {
 		consumer_key: consumerKey,
@@ -18,13 +21,16 @@ export async function POST() {
 			headers: {
 				'Content-Type': 'application/json',
 			},
+			body: JSON.stringify(authPayload),
+		});
 
-			const data = await response.json();
-			return NextResponse.json(data);
-		} catch (error) {
-			return NextResponse.json({error: 'Failed to fetch token'}, (status: 500));
-		})
+		if (!response.ok) {
+			throw new Error(`Pesapal API error: ${response.statusText}`);
+		}
+
+		const data = await response.json();
+		return NextResponse.json(data);
+	} catch (error) {
+		return NextResponse.json({ error: (error as Error).message }, { status: 500 });
 	}
 }
-
-
