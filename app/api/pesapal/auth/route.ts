@@ -4,6 +4,7 @@ export async function POST(): Promise<NextResponse> {
 	const PESAPAL_URL = "https://cybqa.pesapal.com/pesapalv3/api/Auth/RequestToken"; // Sandbox URL
 
 	const consumerKey: string | undefined = process.env.PESAPAL_CONSUMER_KEY;
+	const consumerKey: string | undefined = process.env.PESAPAL_CONSUMER_KEY;
 	const consumerSecret: string | undefined = process.env.PESAPAL_CONSUMER_SECRET;
 
 	if (!consumerKey || !consumerSecret) {
