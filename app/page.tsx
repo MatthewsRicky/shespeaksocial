@@ -6,8 +6,8 @@ import { motion, AnimatePresence } from "framer-motion";
 const slides = [
 	{
 		image: "/home1-slider1.jpg",
-		title: "We Make People",
-		subtitle: "Explore the world like never before.",
+		title: "We Make People Care About you on Social Media",
+		subtitle: "We Offer A Comprehensive Suite Of Services Tailored To Meet the Unique Needs Of Entrepreneurs, Businesses, Social Media Managers And Freelancers.",
 	},
 	{
 		image: "/home1-slider2.jpg",
