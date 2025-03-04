@@ -17,7 +17,7 @@ const slides = [
 	{
 		image: "/home1-slider3.jpg",
 		title: "Ready To Level Up Your Social Media?",
-		subtitle: "Every moment tells a story.",
+		subtitle: "Get Your Free Consultation Today! .",
 	},
 ];
 
