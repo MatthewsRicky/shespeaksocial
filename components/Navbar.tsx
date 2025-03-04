@@ -10,15 +10,15 @@ export default function Navbar() {
 
 	return (
 		<>
-		<nav>
+		<nav className="bg-opacity-60 bg-pink-300/0">
 			<div className="hidden md:flex items-center justify-between mx-auto">
 				<Link href="/">
 					<Image src ="/shespeaksocial.png" alt="logo" width={144} height={30} />
 				</Link>
 
 				{navLinks.map((link) => (
-					<ul key={link} className="flex items-center justify-between mx-auto gap-4">
-						<li className="flex items-center justify-around mx-auto px-3 py-2">
+					<ul key={link} className="flex items-center justify-around mx-auto gap-2">
+						<li className="flex items-center justify-around mx-auto px-2 py-2">
 							<Link href={"/" + link}>
 								{link}
 							</Link>
