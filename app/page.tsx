@@ -16,7 +16,7 @@ const slides = [
 	},
 	{
 		image: "/home1-slider3.jpg",
-		title: "Create Unforgettable Memories",
+		title: "Ready To Level Up Your Social Media?",
 		subtitle: "Every moment tells a story.",
 	},
 ];
