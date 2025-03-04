@@ -11,7 +11,7 @@ const slides = [
 	},
 	{
 		image: "/home1-slider2.jpg",
-		title: "Experience the Thrill",
+		title: "Double Your Social Media Engagement In Just One Month",
 		subtitle: "Unleash your inner explorer.",
 	},
 	{
