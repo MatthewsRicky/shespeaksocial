@@ -10,8 +10,8 @@ export default function Navbar() {
 
 	return (
 		<>
-		<nav className="bg-opacity-60 bg-pink-300/0">
-			<div className="hidden md:flex items-center justify-between mx-auto">
+		<nav className="flex bg-opacity-60 bg-pink-300/30 md:h-32">
+			<div className="flex items-center justify-between px-4 lg:w-[80%] mx-auto">
 				<Link href="/">
 					<Image src ="/shespeaksocial.png" alt="logo" width={144} height={30} />
 				</Link>
@@ -26,7 +26,7 @@ export default function Navbar() {
 					</ul>
 				))}
 
-				<div className="flex items-cente gap-2  justify-center mx-auto">
+				<div className="flex flex-col md:flex-row items-center gap-2  justify-center mx-auto">
 					<input type="search" className="rounded-lg shadow-black/30 shadow-lg border-black border-2 border-solid" placeholder="Find Blog" />
 					<button type="submit" className="bg-pink-500 px-3 shadow-lg shadow-pink-400/70 py-2 rounded-lg">Get in Touch</button>
 				</div>
@@ -48,7 +48,7 @@ export default function Navbar() {
 					</ul>
 				))}
 
-				<div className="flex items-cente gap-2  justify-center mx-auto">
+				<div className="flex flex-col items-cente gap-2 h-auto  justify-center mx-auto">
 					<input type="search" className="rounded-lg shadow-black/30 shadow-lg border-black border-2 border-solid" placeholder="Find Blog" />
 					<button type="submit" className="bg-pink-500 px-3 shadow-lg shadow-pink-400/70 py-2 rounded-lg">Get in Touch</button>
 				</div>
