@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const slides = [
 	{
 		image: "/home1-slider1.jpg",
-		title: "Discover Your Adventure",
+		title: "We Make People",
 		subtitle: "Explore the world like never before.",
 	},
 	{
