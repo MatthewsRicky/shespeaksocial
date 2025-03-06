@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ServiceCards = () => {
 	return (
-		<div>
+		<div className="flex items-center justify-center w-full h-screen flex-col">
 			<header>
 				<h1>How can I help you</h1>
 				</header>
