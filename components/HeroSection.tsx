@@ -33,13 +33,13 @@ export default function HeroSection() {
 	}, []);
 
 	return (
-		<section className="relative h-screen max-h-[90vh] flex items-center justify-center text-white overflow-hidden">
+		<section className="relative h-screen flex items-center justify-center text-white overflow-hidden">
 			{/* Background Image Slideshow */}
 			<div className="absolute inset-0">
 				<AnimatePresence>
 					<motion.div
 						key={slides[index].image}
-						className="absolute inset-0 bg-cover bg-center"
+						className="absolute inset-0 bg-cover h-[60%] my-auto bg-center"
 						style={{ backgroundImage: `url(${slides[index].image})` }}
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
