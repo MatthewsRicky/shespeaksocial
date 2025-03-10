@@ -10,7 +10,7 @@ export default function Navbar() {
 
 	return (
 		<>
-		<nav className="flex bg-opacity-60 bg-pink-300/30 md:h-32">
+		<nav className="flex bg-opacity-60 font-medium bg-pink-200/70 md:h-32">
 			<div className="flex items-center justify-between px-4 lg:w-[80%] mx-auto">
 				<Link href="/">
 					<Image src ="/shespeaksocial.png" alt="logo" width={144} height={30} />
