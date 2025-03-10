@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const ServiceCards = () => {
 	return (
-		<div className="flex items-center justify-center   w-full h-screen flex-col">
+		<div className="flex items-center justify-center w-90vh h-screen flex-col">
 			<header>
-				<h1>How can I help you</h1>
+				<h1 className="font-bold text-3xl">How can I help you</h1>
 				</header>
 				<div className="flex sm:flex-row flex-col items-center justify-between px-4 py-3  rounded-lg  m-8 text-slate-900">
 					<div className="flex sm:flex-col items-center justify-between min-w-8  px-2 m-4 bg-pink-100">
