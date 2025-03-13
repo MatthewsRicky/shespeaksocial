@@ -33,7 +33,7 @@ export default function HeroSection() {
 	}, []);
 
 	return (
-		<section className="relative h-[60vh] flex items-center justify-center text-white overflow-hidden">
+		<section className="relative h-[60vh] flex items-center justify-center lg:mt-24 text-white overflow-hidden">
 			{/* Background Image Slideshow */}
 			<div className="absolute inset-0">
 				<AnimatePresence>
