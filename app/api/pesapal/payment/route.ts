@@ -9,7 +9,7 @@ export async function POST(req: Request) {
 			amount,
 			currency: currency || "KES", // Default currency KES (Kenyan Shilling)
 			description,
-			callback_url: "https://yourwebsite.com/payment-success",
+			callback_url: "https://localhost:3000/payment-success",
 			notification_id: process.env.PESAPAL_IPN_ID, // IPN ID from Pesapal
 			email,
 			phone_number: phoneNumber,
