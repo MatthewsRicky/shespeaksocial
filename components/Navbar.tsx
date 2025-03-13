@@ -11,7 +11,7 @@ export default function Navbar() {
 	return (
 		<>
 		<nav className="flex bg-opacity-60 font-medium bg-pink-200/70 md:h-32">
-			<div className="flex items-center justify-between px-4 lg:w-[80%] mx-auto">
+			<div className="hidden lg:flex items-center justify-between px-4 lg:w-[80%] mx-auto">
 				<Link href="/">
 					<Image src ="/shespeaksocial.png" alt="logo" width={144} height={30} />
 				</Link>
@@ -33,7 +33,7 @@ export default function Navbar() {
 
 			</div>
 
-			<div className="flex flex-col md:hidden">
+			<div className="flex flex-col lg:hidden">
 				<Link href="/">
 					<Image src ="/shespeaksocial.png" alt="logo" width={144} height={30} />
 				</Link>
