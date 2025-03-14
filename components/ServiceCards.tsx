@@ -7,7 +7,7 @@ const ServiceCards = () => {
 			<header>
 				<h1 className="font-bold text-3xl">How can I help you</h1>
 				</header>
-				<div className="flex sm:flex-row flex-col items-center justify-between px-4 py-3 w-[90%] lg:w-[80%] mx-auto rounded-lg  m-4 text-slate-900">
+				<div className="flex md:flex-row flex-col items-center justify-between px-4 py-3 w-[90%] lg:w-[80%] mx-auto rounded-lg  m-4 text-slate-900">
 					<div className="flex sm:flex-col items-center justify-center text-center w-[90%] md:w-[23%] lg:w-[20%] rounded-lg  min-h-80 py-4 px-2 m-2 sm:m-3 lg:m-4 bg-pink-100">
 						<Image src="/make-money.png" alt="make-money icon" width={50} height={50} />
 						<div className="flex-col gap-4 items-center justify-between py-3.5 rounded-lg px-2 ">
