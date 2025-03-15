@@ -10,7 +10,7 @@ export default function Navbar() {
 
 	return (
 		<>
-		<nav className="flex inset-1 font-medium bg-gradient-to-r from-pink-200 to-violet-200 h-96 items-center py-6 justify-center lg:h-32">
+		<nav className="flex inset-1 font-medium bg-gradient-to-r from-pink-200 to-red-200 h-96 items-center py-6 justify-center lg:h-32">
 			<div className="hidden lg:flex items-center justify-between px-4 lg:w-[80%] mx-auto">
 				<Link href="/">
 					<Image src ="/shespeaksocial.png" alt="logo" width={144} height={30} />
