@@ -39,7 +39,7 @@ export default function HeroSection() {
 				<AnimatePresence>
 					<motion.div
 						key={slides[index].image}
-						className="absolute inset-0 bg-cover my-auto bg-center"
+						className="absolute inset-0 bg-cover bg-center"
 						style={{ backgroundImage: `url(${slides[index].image})` }}
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
@@ -50,7 +50,7 @@ export default function HeroSection() {
 			</div>
 
 			{/* Overlay */}
-			<div className="absolute inset-0 bg-black/40"></div>
+			<div className="absolute inset-0 bg-black/40 my-16"></div>
 
 			{/* Hero Content (Individual per Slide) */}
 			<div className="relative z-10 text-center px-6">
