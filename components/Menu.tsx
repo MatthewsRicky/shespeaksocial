@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from "next/link";
-import Image from "next/image";
+
 
 
 
@@ -9,9 +9,6 @@ const Menu = () => {
 	return (
 		<div>
 			<div className="hidden lg:flex items-center justify-between px-4 lg:w-[80%] mx-auto">
-				<Link href="/">
-					<Image src ="/shespeaksocial.png" alt="logo" width={144} height={30} />
-				</Link>
 
 				{navLinks.map((link) => (
 					<ul key={link} className="flex items-center justify-around mx-auto gap-2">
@@ -32,9 +29,7 @@ const Menu = () => {
 
 			<div className="flex flex-col md:flex-row items-center gap-2  justify-center mx-auto">
 
-				<Link href="/">
-					<Image src ="/shespeaksocial.png" alt="logo" width={144} height={30}  className="!flex"/>
-				</Link>
+
 
 				<div className="flex flex-col lg:hidden">
 
