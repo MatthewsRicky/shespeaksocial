@@ -1,13 +1,12 @@
 "use client"
 import React, {useState} from 'react'
-import Link from "next/link";
-import Image from "next/image";
+
 import {BiMenu} from "react-icons/bi";
 import Menu from "@/components/Menu";
 
 export default function Navbar() {
 
-	const navLinks = [ "about", "blog", "payment", "for-business", "for Individuals", "resources"];
+
 
 	const [menuOpen, setMenuOpen] = useState(false);
 
