@@ -1,16 +1,25 @@
 "use client"
-
-import React from 'react'
+import React, {useState} from 'react'
 import Link from "next/link";
 import Image from "next/image";
+import {BiMenu} from "react-icons/bi";
 
 export default function Navbar() {
 
 	const navLinks = [ "about", "blog", "payment", "for-business", "for Individuals", "resources"];
 
+	const [menuOpen, setMenuOpen] = useState(false);
+
+
 	return (
 		<>
 		<nav className="flex inset-1 font-medium bg-gradient-to-r from-pink-200 to-red-200 h-96 items-center py-6 justify-center lg:h-32">
+
+			<button onClick={() => setMenuOpen(!menuOpen)}>
+				<span>
+					<BiMenu />
+				</span>
+			</button>
 			<div className="hidden lg:flex items-center justify-between px-4 lg:w-[80%] mx-auto">
 				<Link href="/">
 					<Image src ="/shespeaksocial.png" alt="logo" width={144} height={30} />
