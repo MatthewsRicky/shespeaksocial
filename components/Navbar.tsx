@@ -14,7 +14,7 @@ export default function Navbar() {
 	return (
 		<>
 
-		<nav className="flex inset-1 font-medium bg-gradient-to-r from-pink-200 to-red-200 h-96 items-center py-6 justify-center lg:h-32">
+		<nav className="flex inset-1 font-medium bg-gradient-to-r from-pink-100/90 to-green-100/60 h-96 items-center py-6 justify-center lg:h-32">
 
 			<button onClick={() => setMenuOpen(!menuOpen)} className="flex p-4 rounded-full m-4 bg-pink-500 shadow-emerald-950/60 shadow-md">
 				<span>
