@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import HeroButton from "@/components/HeroButton";
 
 const slides = [
 	{
@@ -17,7 +18,7 @@ const slides = [
 	{
 		image: "/home1-slider3.jpg",
 		title: "Ready To Level Up Your Social Media?",
-		subtitle: "Get Your Free Consultation Today! .",
+		subtitle: "Get Your Free Consultation Today!",
 	},
 ];
 
@@ -46,7 +47,9 @@ export default function HeroSection() {
 						exit={{ opacity: 0 }}
 						transition={{ duration: 1 }}
 					/>
+
 				</AnimatePresence>
+				<HeroButton />
 			</div>
 
 			{/* Overlay */}
