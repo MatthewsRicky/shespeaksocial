@@ -49,9 +49,9 @@ export default function HeroSection() {
 					/>
 
 				</AnimatePresence>
-				<HeroButton />
-			</div>
 
+			</div>
+			<HeroButton />
 			{/* Overlay */}
 			<div className="absolute inset-0 bg-black/40 my-16"></div>
 
