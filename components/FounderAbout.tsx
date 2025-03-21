@@ -1,5 +1,8 @@
+"use client"
+
 import React from 'react'
 import Image from "next/image";
+import Link from "next/link";
 
 const FounderAbout = () => {
 	return (
@@ -15,7 +18,7 @@ const FounderAbout = () => {
 				<p>
 					She Speaks Social Media Agency aims to shape the future of digital marketing and mold the future leaders of the digital world, bridging the gap between passion and purpose.
 				</p>
-				<button type="button" onClick={openAbout}>About She Speaks Social Media Agency</button>
+				<Link href="/about">About She Speaks Social Media Agency</Link>
 			</article>
 
 		</section>
