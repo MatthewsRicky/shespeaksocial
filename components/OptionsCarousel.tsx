@@ -2,7 +2,7 @@ import React from 'react'
 
 const OptionsCarousel = () => {
 	return (
-		<>
+		<section className="flex gap-8 m-8 px-12 justify-start items-center ">
 			<div>
 				<div>
 					<h1>Corporate Training & Coaching</h1>
@@ -28,7 +28,7 @@ const OptionsCarousel = () => {
 					<h1>Freelance Resources</h1>
 				</div>
 			</div>
-		</>
+		</section>
 			)
 }
 export default OptionsCarousel
