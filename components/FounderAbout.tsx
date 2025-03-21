@@ -15,7 +15,7 @@ const FounderAbout = () => {
 				<p>
 					She Speaks Social Media Agency aims to shape the future of digital marketing and mold the future leaders of the digital world, bridging the gap between passion and purpose.
 				</p>
-				<button type="button">About She Speaks Social Media Agency</button>
+				<button type="button" onClick={openAbout}>About She Speaks Social Media Agency</button>
 			</article>
 
 		</section>
