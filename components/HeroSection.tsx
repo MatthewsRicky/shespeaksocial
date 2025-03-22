@@ -16,7 +16,7 @@ const slides = [
 		subtitle: "How would it feel to have a dedicated team backing your social media efforts? We are committed. ",
 	},
 	{
-		image: "/home1-slider3.jpg",
+		image: "/1729683914_site.jpg",
 		title: "Ready To Level Up Your Social Media?",
 		subtitle: "Get Your Free Consultation Today!",
 	},
@@ -51,7 +51,7 @@ export default function HeroSection() {
 				</AnimatePresence>
 
 			</div>
-			<HeroButton />
+
 			{/* Overlay */}
 			<div className="absolute inset-0 bg-black/40 my-16"></div>
 
