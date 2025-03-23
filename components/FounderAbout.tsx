@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const FounderAbout = () => {
 	return (
-		<section>
+		<section className="flex flex-col items-center justify-center w-[85%] mx-auto my-8">
 			<article>
 				<Image
 					src="/about.jpeg" alt="Founder About Me"  width={500} height={500}
