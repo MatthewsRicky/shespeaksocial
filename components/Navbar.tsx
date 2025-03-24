@@ -15,7 +15,7 @@ export default function Navbar() {
 	return (
 		<>
 
-		<nav className={`flex inset-1 font-medium bg-gradient-to-r from-pink-100/90 to-green-100/60 items-center py-6 justify-between lg:h-32 ${menuOpen ? "h-96" : "h-24"}`}>
+		<nav className={`flex inset-1 font-medium bg-gradient-to-r from-green-100/90 to-pink-100/90 items-center py-6 justify-between lg:h-32 ${menuOpen ? "h-96" : "h-24"}`}>
 
 			<div className="flex justify-around items-center w-full lg:w-[90%] mx-auto px-8">
 
