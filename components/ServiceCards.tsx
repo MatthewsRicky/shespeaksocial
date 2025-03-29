@@ -16,21 +16,21 @@ const ServiceCards = () => {
 							<p>We help free up your time so you can focus on what you do best - running your business.</p>
 						</div>
 					</div>
-					<div className="flex sm:flex-col items-center justify-center text-center w-[90%] md:w-[23%] lg:w-[20%] rounded-lg min-h-80 py-4 px-2 m-2 sm:m-3 lg:m-4 bg-pink-100 md:translate-y-[-8] shadow-emerald-600/20 shadow-xl hover:scale-105">
+					<div className="flex sm:flex-col items-center justify-center text-center w-[90%] md:w-[23%] lg:w-[20%] rounded-lg  min-h-80 py-4 px-2 m-2 sm:m-3 lg:m-4 bg-pink-100 md:translate-y-8 shadow-emerald-600/20 shadow-xl hover:scale-105">
 						<Image src="/like.png" alt="Like icon" width={50} height={50} />
 						<div className="flex-col gap-4 items-center justify-between py-3.5 px-2 ">
 							<h2 className="font-medium py-2">Turn Likes into Clients</h2>
 							<p>We help you convert your online audience into loyal customers and boost your bottom line.</p>
 						</div>
 					</div>
-					<div className="flex sm:flex-col items-center justify-center text-center w-[90%] md:w-[23%] lg:w-[20%] rounded-lg min-h-80 py-4  px-2 m-2 sm:m-3 lg:m-4 bg-pink-100 md:translate-y-8 shadow-emerald-600/20 shadow-xl hover:scale-105">
+					<div className="flex sm:flex-col items-center justify-center text-center w-[90%] md:w-[23%] lg:w-[20%] rounded-lg  min-h-80 py-4 px-2 m-2 sm:m-3 lg:m-4 bg-pink-100 md:translate-y-8 shadow-emerald-600/20 shadow-xl hover:scale-105">
 						<Image src="/social.png" alt="Social icon" width={50} height={50} />
 						<div className="flex-col gap-4 items-center justify-between py-3.5 px-2 ">
 							<h2 className="font-medium py-2">Level Your Social Media Skills</h2>
 							<p>Take advantage of our free ebooks, training programs and workshops to stay ahead of the curve</p>
 						</div>
 					</div>
-					<div className="flex sm:flex-col items-center justify-center text-center w-[90%] md:w-[23%] lg:w-[20%] rounded-lg min-h-80 py-4 px-2 m-2 sm:m-3 lg:m-4 bg-pink-100 md:translate-y-[-8] shadow-emerald-600/20 shadow-xl hover:scale-105">
+					<div className="flex sm:flex-col items-center justify-center text-center w-[90%] md:w-[23%] lg:w-[20%] rounded-lg  min-h-80 py-4 px-2 m-2 sm:m-3 lg:m-4 bg-pink-100 md:translate-y-8 shadow-emerald-600/20 shadow-xl hover:scale-105">
 						<Image src="/grow.png" alt="Grow icon" width={50} height={50} />
 						<div className="flex-col gap-4 items-center justify-between py-3.5 px-2 ">
 							<h2 className="font-medium py-2">Grow Your Business On Social Media</h2>
