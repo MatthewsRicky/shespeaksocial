@@ -1,14 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Link from "next/link";
 
 
 
 
 const Menu = () => {
+	const [menuOpen, setMenuOpen] = useState(false);
 	const navLinks = [ "about", "blog", "payment", "for-business", "for Individuals", "resources"];
 	return (
 		<div>
-			<div className="hidden lg:flex items-center justify-between px-4 lg:w-[80%] mx-auto">
+			<div className={`${!menuOpen? "hidden" : "lg-flex"} lg:flex items-center justify-between px-4 lg:w-[80%] mx-auto`}>
 
 				{navLinks.map((link) => (
 					<ul key={link} className="flex items-center justify-around mx-auto gap-2">
