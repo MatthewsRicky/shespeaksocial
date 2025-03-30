@@ -15,12 +15,12 @@ export default function Navbar() {
 	return (
 		<>
 
-		<nav className={`flex inset-1 font-medium bg-gradient-to-r from-pink-200/90 to-purple-200/90 items-center py-6 justify-between lg:h-32 ${menuOpen ? "h-96" : "h-24 lg:-flex"}`}>
+		<nav className={`flex inset-1 font-medium bg-gradient-to-r from-pink-50/90 to-purple-100/90 items-center py-6 justify-between lg:h-32 ${menuOpen ? "h-96" : "h-24 lg:-flex"}`}>
 
-			<div className={`flex justify-around items-center w-full lg:w-[90%] mx-auto px-8`}>
+			<div className="flex justify-around items-center w-full lg:w-[90%] mx-auto px-8">
 
 				<Logo />
-				<div className={`hidden lg:flex items-center justify-between px-4 lg:w-full mx-auto`}>
+				<div className="hidden lg:flex items-center justify-between px-4 lg:w-full mx-auto">
 
 					{navLinks.map((link) => (
 						<ul key={link} className="flex items-center justify-around mx-auto gap-2">
