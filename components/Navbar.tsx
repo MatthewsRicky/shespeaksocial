@@ -37,7 +37,7 @@ export default function Navbar() {
 
 							<div className="flex flex-col md:flex-row items-center gap-2  justify-center mx-auto">
 								<input type="search" className="rounded-lg shadow-black/30 shadow-lg border-black border-2 border-solid" placeholder="Find Blog" />
-								<button type="submit" className=" flex justify-center items-center bg-pink-500 px-3 shadow-lg shadow-pink-400/70 py-2 rounded-lg">Get in Touch</button>
+								<button type="submit" className=" flex flex-row justify-center items-center bg-pink-500 px-3 shadow-lg shadow-pink-400/70 py-2 rounded-lg">Get in Touch</button>
 							</div>
 
 						</div>
@@ -50,7 +50,7 @@ export default function Navbar() {
 
 
 								{navLinks.map((link) => (
-									<ul key={link} className="flex items-center justify-between mx-auto gap-4">
+									<ul key={link} className="flex items-center justify-between mx-auto gap-6 bg-pink-100/50 rounded">
 										<li className="flex items-center justify-around mx-auto px-3 py-2">
 											<Link href={"/" + link}>
 												{link}
