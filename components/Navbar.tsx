@@ -33,8 +33,8 @@ export default function Navbar() {
 					))}
 
 					<div className="flex flex-col md:flex-row items-center gap-2  justify-center mx-auto">
-						<input type="search" className="rounded-lg shadow-black/30 shadow-lg border-black border-2 border-solid" placeholder="Find Blog" />
-						<button type="submit" className=" flex flex-row justify-center items-center bg-pink-500 px-3 shadow-lg shadow-pink-400/70 py-2 rounded-lg">Get in Touch</button>
+						<input type="search" className="w-24 text-center flex justify-center rounded-lg shadow-black/30 shadow-lg border-black border-2 border-solid" placeholder="Find Blog" />
+						<button type="submit" className=" flex flex-row justify-center items-center bg-pink-500 px-1 shadow-lg shadow-pink-400/70 py-1 rounded-lg">Get in Touch</button>
 					</div>
 
 				</div>
