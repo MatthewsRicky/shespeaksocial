@@ -15,17 +15,17 @@ export default function Navbar() {
 	return (
 		<>
 
-		<nav className={`absolute z-20 flex inset-1 font-regular bg-gradient-to-r from-pink-50
+		<nav className={`absolute z-20 flex inset-1 font-bold text-sm bg-gradient-to-r from-pink-50
 		 90 to-purple-100/90 items-center py-6 justify-between lg:h-32 ${menuOpen ? "h-96" : "h-24 lg:-flex"} transition all duration-300`}>
 
 			<div className="flex relative z-20 justify-around items-center w-full text-md mx-auto px-8">
 
 				<Logo />
-				<div className="hidden lg:flex items-center justify-between px-4 lg:w-full mx-auto">
+				<div className="hidden lg:flex items-center justify-between lg:w-full px-24 mx-auto">
 
 					{navLinks.map((link) => (
-						<ul key={link} className="flex items-center justify-around mx-auto gap-2">
-							<li className="flex items-center justify-around mx-auto px-2 py-2">
+						<ul key={link} className="flex items-center justify-center mx-auto gap-2">
+							<li className="flex items-center justify-center mx-auto px-2 py-2">
 								<Link href={"/" + link}>
 									{link}
 								</Link>
@@ -44,7 +44,7 @@ export default function Navbar() {
 					<div>
 
 
-						<div className="flex flex-col md:flex-row items-center gap-2  justify-center mx-auto">
+						<div className="flex flex-col md:flex-row items-center gap-2  justify-start mx-auto">
 
 
 
