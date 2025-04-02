@@ -26,14 +26,10 @@ const OptionsCarousel = () => {
 			</div>
 
 
-			<div className="fl">
-				{optionOpen ? (
+			<div className="">
+				{optionOpen && !individualOpen ? (
 					<ForBusiness />
-				) : 	!setOptionOpen}
-
-				{individualOpen ? (
-					<ForIndividuals />
-				) : !individualOpen}
+				) : (<ForIndividuals />)}
 			</div>
 
 
