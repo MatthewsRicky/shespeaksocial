@@ -12,7 +12,7 @@ const OptionsCarousel = () => {
 
 	return (
 		<section className="flex flex-col gap-8 m-8 px-12 justify-start items-center ">
-			<div className="flex justify-between items-center w-full">
+			<div className="flex 7justify-between items-center w-full">
 
 				<button onClick={() => {
 					setOptionOpen(!optionOpen)
