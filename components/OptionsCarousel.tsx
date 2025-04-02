@@ -7,22 +7,35 @@ import ForBusiness from "./ForBusiness";
 const OptionsCarousel = () => {
 
 	const [optionOpen, setOptionOpen] = useState(true);
-	const [individualOpen, setIndividualOpen] = useState(true);
+	const [individualOpen, setIndividualOpen] = useState(false);
 
 
 	return (
-		<section className="flex gap-8 m-8 px-12 justify-start items-center ">
+		<section className="flex flex-col gap-8 m-8 px-12 justify-start items-center ">
+			<div className="flex justify-between items-center w-full">
 
-			<button onClick={() => setOptionOpen(!optionOpen)}>For Businesses</button>
-			<button onClick={() => setIndividualOpen(!individualOpen)}>For Individuals</button>
+				<button onClick={() => {
+					setOptionOpen(!optionOpen)
+					setIndividualOpen(!individualOpen)
+				}}>For Businesses</button>
+				<button onClick={() => {
+					setIndividualOpen(!individualOpen)
+					setOptionOpen(!optionOpen)
+				}}>For Individuals</button>
 
-			{optionOpen ? (
-				<ForBusiness />
-			) : 	!setOptionOpen}
+			</div>
 
-			{individualOpen ? (
-				<ForIndividuals />
-			) : !optionOpen}
+
+			<div className="fl">
+				{optionOpen ? (
+					<ForBusiness />
+				) : 	!setOptionOpen}
+
+				{individualOpen ? (
+					<ForIndividuals />
+				) : !individualOpen}
+			</div>
+
 
 
 
