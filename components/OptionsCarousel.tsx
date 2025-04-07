@@ -1,32 +1,31 @@
 "use client"
 
-// import React, {useState} from 'react'
+ import React, {useState} from 'react'
  import ForIndividuals from "./ForIndividuals";
  import ForBusiness from "./ForBusiness";
 
 const OptionsCarousel = () => {
-
-	// const [optionOpen, setOptionOpen] = useState(true);
-	// const [individualOpen, setIndividualOpen] = useState(false);
+	const [optionOpen, setOptionOpen] = useState(true);
+  const [individualOpen, setIndividualOpen] = useState(false);
 
 
 	return (
-		<section className="flex flex-col gap-8 m-8 px-12 justify-start items-center ">
+		<section className="flex gap-8 m-8 px-12 justify-start items-center ">
 
-			<span className="peer/business">For Business</span>
-			<span className="peer/individual">For Individual</span>
+			{/*<span className="peer/business">For Business</span>*/}
+			{/*<span className="peer/individual">For Individual</span>*/}
 
-			<div className="flex">
-				<div className="hidden peer-active/business:flex">
-					<ForBusiness />
-				</div>
-				<div className="hidden peer-active/individual:flex">
-					<ForIndividuals />
-				</div>
+			{/*<div className="flex">*/}
+			{/*	<div className="hidden peer-active/business:flex">*/}
+			{/*		<ForBusiness />*/}
+			{/*	</div>*/}
+			{/*	<div className="hidden peer-active/individual:flex">*/}
+			{/*		<ForIndividuals />*/}
+			{/*	</div>*/}
 
-			</div>
+			{/*</div>*/}
 
-			{/*	<div className="flex 7justify-between items-center w-full">
+				<div className="flex 7justify-between items-center w-full">
 
 
 
@@ -46,7 +45,7 @@ const OptionsCarousel = () => {
 				{optionOpen && !individualOpen ? (
 					<ForBusiness />
 				) : (<ForIndividuals />)}
-			</div>*/}
+			</div>
 
 
 
