@@ -34,6 +34,7 @@ const ForBusiness = () => {
 				<div key={item.id}>
 					<Image src={item.imageUrl} alt="Consulting" width={400} height={400} />
 					<h1>{item.title}</h1>
+					<p>{item.description}</p>
 				</div>
 			))}
 		</div>
