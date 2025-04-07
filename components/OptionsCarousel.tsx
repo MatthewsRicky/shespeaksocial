@@ -25,27 +25,30 @@ const OptionsCarousel = () => {
 
 			{/*</div>*/}
 
+			<div className="flex flex-col">
 				<div className="flex 7justify-between items-center w-full">
 
 
 
-				<button onClick={() => {
-					setOptionOpen(!optionOpen)
-					setIndividualOpen(!individualOpen)
-				}}>For Businesses</button>
-				<button onClick={() => {
-					setIndividualOpen(!individualOpen)
-					setOptionOpen(!optionOpen)
-				}}>For Individuals</button>
+					<button onClick={() => {
+						setOptionOpen(!optionOpen)
+						setIndividualOpen(!individualOpen)
+					}}>For Businesses</button>
+					<button onClick={() => {
+						setIndividualOpen(!individualOpen)
+						setOptionOpen(!optionOpen)
+					}}>For Individuals</button>
 
+				</div>
+
+
+				<div className="">
+					{optionOpen && !individualOpen ? (
+						<ForBusiness />
+					) : (<ForIndividuals />)}
+				</div>
 			</div>
 
-
-			<div className="">
-				{optionOpen && !individualOpen ? (
-					<ForBusiness />
-				) : (<ForIndividuals />)}
-			</div>
 
 
 
