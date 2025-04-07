@@ -10,19 +10,19 @@ const ForBusiness = () => {
 		button: "Get started",
 		id: 1,
 	},{
-		imageUrl: "",
+		imageUrl: "/social-media-mgt.png",
 		title: "Full Social Media Management",
 		description: "For dedicated and ambitious entrepreneurs looking to hand over their social media to an expert team.",
 		button: "Shop Now",
 		id: 2,
 	},{
-		imageUrl: "",
+		imageUrl: "/team_engage.jpg",
 		title: "Speaking & Events",
 		description: "Elevate your events with engaging and insightful talks from our seasoned social media experts.",
 		button: "Get in touch",
 		id: 3,
 	},{
-		imageUrl: "",
+		imageUrl: "/corporate_engage.jpg",
 		title: "Digital Literacy Programs",
 		description: "Designed to equip underprivileged youth with the skills to succeed in the digital world.",
 		button: "Sign up",
