@@ -35,6 +35,7 @@ const ForBusiness = () => {
 					<Image src={item.imageUrl} alt="Consulting" width={400} height={400} />
 					<h1>{item.title}</h1>
 					<p>{item.description}</p>
+					<button onClick={() => {}} type={"button"}>{item.button}</button>
 				</div>
 			))}
 		</div>
