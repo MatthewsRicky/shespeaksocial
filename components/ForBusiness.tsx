@@ -33,9 +33,9 @@ const ForBusiness = () => {
 	},
 ]
 	return (
-		<div className="w-screen ">
+		<div className="w-screen relative flex overflow-hidden bg-gradient-to-b from-pink-100 to-purple-100">
 			{businessCard.map((item) => (
-				<div key={item.id}>
+				<div key={item.id} className="flex flex-col">
 					<Image src={item.imageUrl} alt="Consulting" width={400} height={400} />
 					<h1>{item.title}</h1>
 					<p>{item.description}</p>
