@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const Logo = () => {
 	return (
-		<div>
+		<div className="flex justify-center items-center h-full">
 			<Link href="/">
-				<Image src ="/shespeaksocial.png" alt="logo" width={144} height={30}  className="flex!"/>
+				<Image src ="/shespeaksocial.png" alt="logo" width={144} height={60}  />
 			</Link>
 		</div>
 	)
