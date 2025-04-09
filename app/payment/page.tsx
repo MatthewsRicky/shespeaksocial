@@ -45,7 +45,7 @@ export default function PaymentPage() {
 			<select
 				value={paymentMethod}
 				onChange={(e) => setPaymentMethod(e.target.value)}
-				className="w-full p-2 border rounded"
+				className="w-full p-2 border rounded-sm"
 			>
 				<option value="">Select a Payment Method</option>
 				<option value="M-Pesa">M-Pesa</option>
@@ -56,7 +56,7 @@ export default function PaymentPage() {
 			<button
 				onClick={initiatePayment}
 				disabled={loading || !paymentMethod}
-				className="mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
+				className="mt-4 px-4 py-2 bg-green-600 text-white rounded-sm hover:bg-green-700 transition"
 			>
 				{loading ? "Processing..." : "Pay Now"}
 			</button>
