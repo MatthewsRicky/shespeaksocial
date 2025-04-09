@@ -10,7 +10,7 @@ const OptionsCarousel = () => {
 
 
 	return (
-		<section className="flex gap-8 m-8 px-12 justify-start items-center ">
+		<section className="flex gap-8 m-8 px-12 justify-center items-center ">
 
 			{/*<span className="peer/business">For Business</span>*/}
 			{/*<span className="peer/individual">For Individual</span>*/}
