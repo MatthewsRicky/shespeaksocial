@@ -10,7 +10,7 @@ const OptionsCarousel = () => {
 
 
 	return (
-		<section className="flex gap-8 m-8 px-12 justify-center items-center ">
+		<section className="flex gap-8 my-8 md:p-4 lg:p-6 justify-center items-center ">
 
 			{/*<span className="peer/business">For Business</span>*/}
 			{/*<span className="peer/individual">For Individual</span>*/}
@@ -26,7 +26,7 @@ const OptionsCarousel = () => {
 			{/*</div>*/}
 
 			<div className="flex flex-col">
-				<div className="flex 7justify-between items-center w-full">
+				<div className="flex justify-between items-center w-full">
 
 
 
