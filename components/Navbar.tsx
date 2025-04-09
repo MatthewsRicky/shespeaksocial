@@ -16,9 +16,9 @@ export default function Navbar() {
 		<>
 
 		<nav className={`absolute z-20 flex inset-1 font-bold text-sm bg-linear-to-r from-pink-50
-		 90 to-purple-100/90 items-center py-6 justify-between lg:h-32 ${menuOpen ? "h-96" : "h-24 lg:-flex"} transition all duration-300`}>
+		 90 to-purple-100/90 items-center py-6 justify-between lg:h-32 ${menuOpen ? "h-96" : "h-32 lg:-flex"} transition all duration-300`}>
 
-			<div className="flex relative z-20 justify-around items-center w-full text-md mx-auto px-8">
+			<div className="flex relative z-20 h-24 justify-around items-center w-full text-md mx-auto px-8">
 
 				<Logo />
 				<div className="hidden lg:flex items-center justify-between lg:w-full px-24 mx-auto">
