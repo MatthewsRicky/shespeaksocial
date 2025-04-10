@@ -11,7 +11,7 @@ const ForBusiness = () => {
 		id: 1,
 	},
 	{
-		imageUrl: "/social-media-mgt.png",
+		imageUrl: "/home1-slider1-2.jpg",
 		title: "Full Social Media Management",
 		description: "For dedicated and ambitious entrepreneurs looking to hand over their social media to an expert team.",
 		button: "Shop Now",
@@ -33,10 +33,10 @@ const ForBusiness = () => {
 	},
 ]
 	return (
-		<div className="w-full min-h-full p-4 rounded-lg grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4 ">
+		<div className="w-full h-fit p-4 grid grid-cols-1 md:grid-cols-2 justify-center items-center rounded-lg gap-4">
 			{businessCard.map((item) => (
-				<div key={item.id} className="flex text-center shadow-violet-400/50 shadow-lg p-4 m-8s gap-6 flex-col justify-center items-center overflow-x-0 bg-linear-to-b from-white to-pink-150">
-					<Image src={item.imageUrl} alt="Consulting" width={400} height={400} className="w-full rounded-lg shadow-md shadow-violet-400/30 m-4"/>
+				<div key={item.id} className="flex rounded-xl text-center shadow-violet-400/50 shadow-lg p-4 m-8 gap-6 flex-col justify-center items-center overflow-x-0 bg-linear-to-b from-white to-pink-50">
+					<Image src={item.imageUrl} alt="Consulting" width={400} height={400} className="rounded-lg shadow-md shadow-violet-400/30 w-full"/>
 					<h1>{item.title}</h1>
 					<p>{item.description}</p>
 					<button onClick={() => {}} type={"button"}>{item.button}</button>
