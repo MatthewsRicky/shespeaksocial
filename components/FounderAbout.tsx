@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const FounderAbout = () => {
 	return (
-		<section className="flex flex-col  items-center justify-center w-full sm:w-[95%] md:w-[90%] mx-auto my-8 bg-pink-100 rounded-xl p-8 shadow-lg shadow-green-500/30">
+		<section className="flex flex-col  items-center justify-center w-full sm:w-[95%] md:w-[90%] mx-auto my-8 bg-linear-to-b from-white to-pink-100 rounded-xl p-8 shadow-lg shadow-violet-300/50">
 			<article className="flex flex-col lg:flex-row gap-6 font-medium text-slate-700 text-center items-center">
 
 				<Image
