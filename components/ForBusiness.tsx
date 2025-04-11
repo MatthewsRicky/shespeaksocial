@@ -33,10 +33,10 @@ const ForBusiness = () => {
 	},
 ]
 	return (
-		<div className="w-full h-fit p-4 grid grid-cols-1 md:grid-cols-2 justify-center items-center rounded-lg gap-4">
+		<div className="w-full h-fit p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center rounded-lg gap-4">
 			{businessCard.map((item) => (
 				<div key={item.id} className="flex rounded-xl text-center shadow-violet-400/50 shadow-lg p-4 m-8 gap-6 flex-col justify-center items-center overflow-x-0 bg-linear-to-b from-white to-pink-50">
-					<Image src={item.imageUrl} alt="Consulting" width={400} height={400} className="rounded-lg shadow-md shadow-violet-400/30 w-full"/>
+					<Image src={item.imageUrl} alt="Consulting" width={400} height={200} className="rounded-lg shadow-md shadow-violet-400/30"/>
 					<h1>{item.title}</h1>
 					<p>{item.description}</p>
 					<button onClick={() => {}} type={"button"}>{item.button}</button>
