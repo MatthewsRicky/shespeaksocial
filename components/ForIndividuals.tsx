@@ -2,7 +2,7 @@ import React from 'react'
 
 const ForIndividuals = () => {
 	return (
-		<div>
+		<div className="flex justify-center items-center">
 			<div>
 				<h1>1 : 1 Coaching</h1>
 			</div>
