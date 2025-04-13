@@ -33,10 +33,12 @@ const ForIndividuals = () => {
 				'flex justify-center items-center mx-auto text-lg font-bold'>1 : 1 Coaching</h1>
 			</div>
 			<div>
-				<h1>Templates Shop</h1>
+				<h1 className=
+				'flex justify-center items-center mx-auto text-lg font-bold'>Templates Shop</h1>
 			</div>
 			<div>
-				<h1>Freelance Resources</h1>
+				<h1 className=
+				'flex justify-center items-center mx-auto text-lg font-bold'>Freelance Resources</h1>
 			</div>
 		</div>
 	)
