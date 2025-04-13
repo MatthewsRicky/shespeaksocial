@@ -29,7 +29,8 @@ const ForIndividuals = () => {
 	return (
 		<div className="flex justify-center items-center gap-8 m-4 px-3 py-4">
 			<div>
-				<h1>1 : 1 Coaching</h1>
+				<h1 className=
+				'flex justify-center items-center mx-auto text-lg font-bold'>1 : 1 Coaching</h1>
 			</div>
 			<div>
 				<h1>Templates Shop</h1>
