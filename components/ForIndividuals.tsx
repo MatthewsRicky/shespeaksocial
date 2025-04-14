@@ -20,9 +20,9 @@ const ForIndividuals = () => {
 		{
 			id : 1,
 			imgurl: "",
-			title: "",
-			description:"",
-			btnlabel:"",
+			title: "Freelance Resources",
+			description:"Turn your social media passion into a fully fledged career with these MUST-HAVE freelance tools and kits.",
+			btnlabel:"Learn more",
 		},
 	]
 
