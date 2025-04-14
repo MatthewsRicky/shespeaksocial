@@ -6,9 +6,9 @@ const ForIndividuals = () => {
 		{
 			id : 1,
 			imgurl: "",
-			title: "",
-			description:"",
-			btnlabel:"",
+			title: "1:1 Coaching",
+			description:"Social Strategy Coaching for freelancers, marketers and entrepreneurs to help you reach long-term success.",
+			btnlabel:"Let's Chat",
 		},
 		{
 			id : 1,
