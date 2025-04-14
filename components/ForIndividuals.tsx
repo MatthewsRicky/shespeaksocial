@@ -11,14 +11,14 @@ const ForIndividuals = () => {
 			btnlabel:"Let's Chat",
 		},
 		{
-			id : 1,
+			id : 2,
 			imgurl: "",
 			title: "Templates Shop",
 			description:"Browse in demand templates, designed to help you get organized, save time and grow your socials.",
 			btnlabel:"Shop now",
 		},
 		{
-			id : 1,
+			id : 3,
 			imgurl: "",
 			title: "Freelance Resources",
 			description:"Turn your social media passion into a fully fledged career with these MUST-HAVE freelance tools and kits.",
