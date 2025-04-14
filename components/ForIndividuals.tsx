@@ -13,9 +13,9 @@ const ForIndividuals = () => {
 		{
 			id : 1,
 			imgurl: "",
-			title: "",
-			description:"",
-			btnlabel:"",
+			title: "Templates Shop",
+			description:"Browse in demand templates, designed to help you get organized, save time and grow your socials.",
+			btnlabel:"Shop now",
 		},
 		{
 			id : 1,
