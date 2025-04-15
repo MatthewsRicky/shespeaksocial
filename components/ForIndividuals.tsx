@@ -36,6 +36,7 @@ const ForIndividuals = () => {
 				<div key={item.id}>
 					<Image src={item.imgurl} alt={item.alt} />
 					<h1>{item.title}</h1>
+					<p>{item.description}</p>
 				</div>
 			))}
 		</div>
