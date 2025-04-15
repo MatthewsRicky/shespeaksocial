@@ -26,7 +26,7 @@ const OptionsCarousel = () => {
 			{/*</div>*/}
 
 			<div className="flex flex-col">
-				<div className="flex justify-between items-center w-full">
+				<div className="flex justify-around items-center w-full">
 
 
 
