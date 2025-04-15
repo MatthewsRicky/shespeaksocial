@@ -5,21 +5,21 @@ const ForIndividuals = () => {
 	const individual = [
 		{
 			id : 1,
-			imgurl: "",
+			imgurl: "/consulting.jpg",
 			title: "1:1 Coaching",
 			description:"Social Strategy Coaching for freelancers, marketers and entrepreneurs to help you reach long-term success.",
 			btnlabel:"Let's Chat",
 		},
 		{
 			id : 2,
-			imgurl: "",
+			imgurl: "/corporate_engage.jpg",
 			title: "Templates Shop",
 			description:"Browse in demand templates, designed to help you get organized, save time and grow your socials.",
 			btnlabel:"Shop now",
 		},
 		{
 			id : 3,
-			imgurl: "",
+			imgurl: "/team_engage.jpg",
 			title: "Freelance Resources",
 			description:"Turn your social media passion into a fully fledged career with these MUST-HAVE freelance tools and kits.",
 			btnlabel:"Learn more",
