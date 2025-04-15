@@ -32,9 +32,10 @@ const ForIndividuals = () => {
 
 	return (
 		<div className="flex justify-center items-center gap-8 m-4 px-3 py-4">
-			{individual.map((item, index) => (
+			{individual.map((item) => (
 				<div key={item.id}>
 					<Image src={item.imgurl} alt={item.alt} />
+					<h1>{item.title}</h1>
 				</div>
 			))}
 		</div>
