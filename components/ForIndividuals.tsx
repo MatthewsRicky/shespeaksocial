@@ -31,7 +31,7 @@ const ForIndividuals = () => {
 	]
 
 	return (
-		<div className="flex justify-center items-center gap-8 m-4 px-3 py-4">
+		<div className="flex justify-center items-center shadow-lg rounded-lg shadow-violet-300 gap-8 m-4 px-3 py-4">
 			{individual.map((item) => (
 				<div key={item.id}>
 					<Image src={item.imgurl} alt={item.alt} width={500} height={500} />
