@@ -43,7 +43,7 @@ const ForBusiness = () => {
 					<Image src={item.imageUrl} alt={item.alt} width={400} height={200} className="rounded-md w-full shadow-lg hover:scale-105 transition-all duration-300 shadow-violet-400/30"/>
 					<h1>{item.title}</h1>
 					<p>{item.description}</p>
-					<button onClick={() => {}} type={"button"} className="flex text-slate-800 bg-pink-400/90">{item.button}</button>
+					<button onClick={() => {}} type={"button"} className="border my-2 px-3 py-2 rounded-sm bg-pink-400/90 text-slate-800 hover:scale-105 hover:bg-pink-500 hover:text-slate-200 transition-all duration-300 hover:shadow-pink-500 hover:shadow-sm hover:border-pink-500 border-pink-300 text-center">{item.button}</button>
 				</div>
 			))}
 		</div>
