@@ -37,7 +37,7 @@ const ForIndividuals = () => {
 					<Image src={item.imgurl} alt={item.alt} width={500} height={500} className="rounded-md flex" />
 					<h1 className="font-bold text-lg text-slate-800">{item.title}</h1>
 					<p className="font-semibold text-md text-slate-700 text-center">{item.description}</p>
-					<button className="border px-3 py-2 rounded-sm bg-pink-400/90 text-slate-800 hover:scale-105 hover:bg-pink-500 hover:text-slate-200 transition-all duration-300 hover:shadow-pink-500 hover:shadow-sm hover:border-pink-500 border-pink-300 text-center">{item.btnlabel}</button>
+					<button className="border my-2 px-3 py-2 rounded-sm bg-pink-400/90 text-slate-800 hover:scale-105 hover:bg-pink-500 hover:text-slate-200 transition-all duration-300 hover:shadow-pink-500 hover:shadow-sm hover:border-pink-500 border-pink-300 text-center">{item.btnlabel}</button>
 				</div>
 			))}
 		</div>
