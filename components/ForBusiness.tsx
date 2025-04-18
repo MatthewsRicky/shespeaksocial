@@ -37,10 +37,10 @@ const ForBusiness = () => {
 	},
 ]
 	return (
-		<div className="relative h-80 m-4 grid grid-cols-1 md:grid-cols-4 justify-center items-center rounded-lg gap-4">
+		<div className="h-240 m-4 grid grid-cols-1 md:grid-cols-2 md:w-lg justify-center items-center rounded-lg gap-4">
 			{businessCard.map((item) => (
-				<div key={item.id} className="flex rounded-xl text-center shadow-violet-400/50 shadow-lg p-2 gap-6 flex-col justify-center items-center overflow-x-0 bg-linear-to-b from-white to-pink-50 w-full">
-					<Image src={item.imageUrl} alt={item.alt} width={400} height={200} className="rounded-md w-full shadow-lg hover:scale-105 transition-all duration-200 shadow-violet-400/30"/>
+				<div key={item.id} className="flex rounded-xl min-h-110 text-center shadow-violet-400/50 shadow-lg gap-6 flex-col justify-center items-center overflow-x-0 bg-linear-to-b from-pink-50 to-pink-100 w-full">
+					<Image src={item.imageUrl} alt={item.alt} width={400} height={400} className="flex cover shadow-lg hover:scale-105 transition-all duration-200 shadow-violet-400/30"/>
 					<h1>{item.title}</h1>
 					<p>{item.description}</p>
 					<button onClick={() => {}} type={"button"} className="border my-2 px-3 py-2 rounded-sm bg-pink-400/90 text-slate-800 hover:scale-105 hover:bg-pink-500 hover:text-slate-200 transition-all duration-200 hover:shadow-pink-500 hover:shadow-sm hover:border-pink-500 border-pink-300 text-center">{item.button}</button>
