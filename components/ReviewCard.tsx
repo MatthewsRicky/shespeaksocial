@@ -24,7 +24,7 @@ const reviews = [
 ]
 
 	return (
-		<div className="flex gap-6">
+		<div className="flex gap-6 rounded-xl m-6 p-2 shadow-lg shadow-violet-300">
 			{reviews.map(item => (
 				<div key = {item.name}>
 					<Image src={item.imgurl} alt="Reviewer image" width={500} height={500} />
