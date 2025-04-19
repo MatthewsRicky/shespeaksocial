@@ -4,7 +4,7 @@ import ReviewCard from "@/components/ReviewCard";
 const Reviews = () => {
 	return (
 		<section>
-			<div>
+			<div className="flex flex-col gap-6 items-center justify-between mt-12">
 				<h1>What our Customers say</h1>
 				<ReviewCard />
 			</div>
