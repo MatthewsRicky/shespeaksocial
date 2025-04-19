@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 
 const ReviewCard = () => {
 const reviews = [
@@ -20,7 +21,17 @@ const reviews = [
 ]
 
 	return (
-		<div>ReviewCard</div>
+		<div>
+			{reviews.map(item => (
+				<div key = {item.name}>
+					<Image src={item.imgurl} alt="Reviewer image" />
+					<h1>{item.name}</h1>
+					<p>{item.description}</p>
+				</div>
+			))
+			}
+			<span>Stars</span>
+		</div>
 	)
 }
 export default ReviewCard
