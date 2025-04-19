@@ -24,7 +24,7 @@ const reviews = [
 		<div>
 			{reviews.map(item => (
 				<div key = {item.name}>
-					<Image src={item.imgurl} alt="Reviewer image" />
+					<Image src={item.imgurl} alt="Reviewer image" width={500} height={500} />
 					<h1>{item.name}</h1>
 					<p>{item.description}</p>
 				</div>
