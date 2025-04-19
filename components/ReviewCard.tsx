@@ -26,7 +26,7 @@ const reviews = [
 	return (
 		<div className="grid grid-cols-3 gap-2 rounded-xl m-6 p-2">
 			{reviews.map(item => (
-				<div key={item.name} className="flex flex-col gap-6 items-center justify-between text-center bg-gradient-to-b from-pink-50 to-pink-200 rounded-xl shadow-lg shadow-violet-300">
+				<div key={item.name} className="flex flex-col gap-6 items-center justify-between text-center bg-gradient-to-b from-pink-100 text-pink-900 to-pink-300 rounded-xl shadow-lg shadow-violet-300">
 					<Image src={item.imgurl} alt="Reviewer image" width={500} height={500} className="rounded-full h-25 w-25 flex shadow-lg shadow-violet-300 hover:scale-105 transiton-all duration-200" />
 					<h1>{item.name}</h1>
 					<p>{item.description}</p>
