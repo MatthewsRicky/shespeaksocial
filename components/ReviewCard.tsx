@@ -14,8 +14,8 @@ const reviews = [
 	},
 	{
 		imgurl: "about2.jpeg",
-		name: "",
-		description: "",
+		name: "Iranic Digital",
+		description: "I was struggling to get my brand noticed until I started working with She Speaks Social Media Agency. They crafted a personalized strategy that truly captured my vision and connected with my audience. In just a few months, I saw significant growth in both engagement and conversions. Their team is knowledgeable, responsive, and committed to results. Partnering with them has been one of the best decisions for my business!",
 	},
 ]
 
