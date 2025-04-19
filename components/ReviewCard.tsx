@@ -24,9 +24,9 @@ const reviews = [
 ]
 
 	return (
-		<div className="flex gap-6 rounded-xl m-6 p-2 shadow-lg shadow-violet-300">
+		<div className="grid grid-cols-3 gap-2 rounded-xl m-6 p-2 shadow-lg shadow-violet-300">
 			{reviews.map(item => (
-				<div key = {item.name}>
+				<div key={item.name} className="flex flex-col gap-6 items-center justify-start text-center bg-gradient-to-b from-pink-50 to-pink-200 rounded-xl">
 					<Image src={item.imgurl} alt="Reviewer image" width={500} height={500} />
 					<h1>{item.name}</h1>
 					<p>{item.description}</p>
