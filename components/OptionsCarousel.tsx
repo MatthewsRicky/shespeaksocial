@@ -10,7 +10,7 @@ const OptionsCarousel = () => {
 
 
 	return (
-		<section className="flex gap-8 my-8 md:p-4 lg:p-6 justify-center items-center ">
+		<section className="flex my-16 justify-center w-screen mx-auto items-center ">
 
 			{/*<span className="peer/business">For Business</span>*/}
 			{/*<span className="peer/individual">For Individual</span>*/}
@@ -25,11 +25,8 @@ const OptionsCarousel = () => {
 
 			{/*</div>*/}
 
-			<div className="flex flex-col">
-				<div className="flex justify-around items-center w-full">
-
-
-
+			<div className="flex flex-col w-[90%] items-center justify-between">
+				<div className="flex justify-between gap-80 items-center w-[90%] px-6 py-4 bg-violet-950 text-pink-100 hover:text-pink-50">
 					<button onClick={() => {
 						setOptionOpen(!optionOpen)
 						setIndividualOpen(!individualOpen)
