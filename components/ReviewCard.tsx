@@ -30,7 +30,7 @@ const reviews = [
 				<div key={item.name} className="flex flex-col gap-6 items-center justify-between text-center text-pink-900 bg-gradient-to-b from-white  to-pink-50 rounded-xl shadow-lg shadow-violet-300">
 					<Image src={item.imgurl} alt="Reviewer image" width={500} height={500} className="rounded-full h-25 w-25 flex shadow-lg shadow-violet-300 hover:scale-105 transiton-all duration-200" />
 					<h1 className="font-medium">{item.name}</h1>
-					<p>{item.description}</p>
+					<p className="font-medium px-6 py-3 text-center text-sm text-slate-800">{item.description}</p>
 					<div className="flex my-6 text-yellow-400">
 						<span>{item.rating}</span>
 						<span>{item.rating}</span>
