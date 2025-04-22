@@ -45,7 +45,7 @@ const Footer = () => {
 							Ebooks & Courses
 							Web Dev Services</article>
 					</div>
-					<div>
+					<div className="flex flex-col items-center gap-6">
 						<h1>Newsletter</h1>
 						<article>Fill in your email address
 							to receive newsletters.</article>
