@@ -10,7 +10,7 @@ const Footer = () => {
 			className="flex flex-col items-center gap-6 justify-center mx-0 bg-slate-900 text-white w-full">
 			<div>
 				<div className="flex">
-					<div>
+					<div className="flex flex-col items-center gap-6">
 						<h1>About Us</h1>
 						<article>We are known for our creativity, precision, and impact.
 							Our brand reflects our dedication to quality,
