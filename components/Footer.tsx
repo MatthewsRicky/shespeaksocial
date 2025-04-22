@@ -32,7 +32,7 @@ const Footer = () => {
 							</li>
 						</ul>
 					</div>
-					<div>
+					<div  className="flex flex-col items-center gap-6">
 						<h1>Explore</h1>
 						<article>1:1 Coaching
 							Templates Shop
