@@ -7,7 +7,7 @@ import Reviews from "@/components/Reviews";
 
 const Home = () => {
 	return (
-		<div>
+		<div className="overflow-hidden">
 			<HeroSection />
 			<ServiceCards />
 			<OptionsCarousel />
