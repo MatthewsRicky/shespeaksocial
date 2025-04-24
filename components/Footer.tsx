@@ -17,17 +17,17 @@ const Footer = () => {
 							innovation, and social empowerment,
 							differentiating us in the market as not just service providers but as change-makers</article>
 						<h2>Follow Us</h2>
-						<ul className="flex items-center gap-6 bg-pink-500 p-4 rounded-lg">
-							<li>
+						<ul className="flex items-center gap-6 bg-pink-50 p-4 text-violet-800 rounded-lg">
+							<li className="text-xl">
 								<FaFacebook />
 							</li>
-							<li>
+							<li className="text-xl">
 								<FaXTwitter />
 							</li>
-							<li>
+							<li className="text-xl">
 								<FaInstagramSquare />
 							</li>
-							<li>
+							<li className="text-xl">
 								<FaThreads />
 							</li>
 						</ul>
