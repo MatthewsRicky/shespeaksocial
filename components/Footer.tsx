@@ -9,7 +9,7 @@ const Footer = () => {
 		<section
 			className="flex flex-col items-center gap-6 justify-center mx-0 bg-slate-900 text-white w-full">
 			<div>
-				<div className="flex">
+				<div className="flex gap-8 p-4 items-start justify-center">
 					<div className="flex flex-col items-center gap-6">
 						<h1>About Us</h1>
 						<article>We are known for our creativity, precision, and impact.
@@ -17,7 +17,7 @@ const Footer = () => {
 							innovation, and social empowerment,
 							differentiating us in the market as not just service providers but as change-makers</article>
 						<h2>Follow Us</h2>
-						<ul>
+						<ul className="flex items-center gap-6 bg-pink-500 p-4 rounded-lg">
 							<li>
 								<FaFacebook />
 							</li>
