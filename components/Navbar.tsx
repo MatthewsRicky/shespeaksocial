@@ -11,7 +11,7 @@ export default function Navbar() {
 
 
 	const [menuOpen, setMenuOpen] = useState(false);
-	const navLinks = [ "about", "blog", "payment", "for-business", "for Individuals", "resources"];
+	const navLinks = [ "about", "blog", "payment", "for-business", "for-individuals", "resources"];
 	return (
 		<>
 
