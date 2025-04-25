@@ -1,8 +1,9 @@
 import React from 'react'
+import ForIndividuals from "@/components/ForIndividuals";
 
-const ForIndividuals = () => {
+const Individuals = () => {
 	return (
-		<div>ForIndividuals</div>
+		<div><ForIndividuals /></div>
 	)
 }
-export default ForIndividuals
+export default Individuals
