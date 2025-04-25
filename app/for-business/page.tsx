@@ -1,8 +1,11 @@
+"use client"
 import React from 'react'
-
-const ForBusiness = () => {
+import  ForBusiness  from "@/components/ForBusiness"
+const Business = () => {
 	return (
-		<div>For Business</div>
+		<div>
+			<ForBusiness />
+		</div>
 	)
 }
-export default ForBusiness
+export default Business
