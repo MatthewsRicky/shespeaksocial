@@ -13,15 +13,16 @@ export default function Navbar() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const navLinks = [ "about", "blog", "payment", "for-business", "for-individuals", "resources"];
 	return (
-		<>
+		<div className={`flex font-bold text-sm bg-linear-to-r from-pink-50
+		 90 to-purple-100/90 items-center py-6 justify-between lg:h-32 ${menuOpen ? "h-96 flex  justify-center items-center" : "h-32 lg:-flex"} transition all duration-300`}>
 
-		<nav className={`absolute z-20 flex inset-1 font-bold text-sm bg-linear-to-r from-pink-50
-		 90 to-purple-100/90 items-center py-6 justify-between lg:h-32 ${menuOpen ? "h-96" : "h-32 lg:-flex"} transition all duration-300`}>
-
-			<div className="flex relative z-20 h-24 justify-around items-center w-full text-md mx-auto px-8">
-
+			<span className="">
 				<Logo />
-				<div className="hidden lg:flex items-center justify-between lg:w-full px-24 mx-auto">
+			</span>
+			<div className="flex h-24 justify-around items-center w-full text-md mx-auto px-8">
+
+
+				<div className="hidden lg:flex items-center  lg:w-full mx-auto">
 
 					{navLinks.map((link) => (
 						<ul key={link} className="flex items-center justify-center mx-auto gap-2">
@@ -72,14 +73,16 @@ export default function Navbar() {
 				)}
 
 
-				<button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden flex w-fit p-4 rounded-full m-4 bg-pink-500 shadow-emerald-950/60 shadow-md">
+
+			</div>
+			<button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden z-20 flex w-fit p-4 rounded-full m-4 bg-pink-500 shadow-emerald-950/60 shadow-md">
 				<span>
 					<BiMenu />
 				</span>
-				</button>
-			</div>
-		</nav>
-</>
+			</button>
+		</div>
+
+
 	)
 }
 
