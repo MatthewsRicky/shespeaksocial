@@ -1,7 +1,7 @@
 "use client"
 import React, {useState} from 'react'
 
-import {BiMenu} from "react-icons/bi";
+import {BiMenu, BiX} from "react-icons/bi";
 
 import Logo from "@/components/Logo";
 import Link from "next/link";
@@ -13,16 +13,27 @@ export default function Navbar() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const navLinks = [ "about", "blog", "payment", "for-business", "for-individuals", "resources"];
 	return (
-		<div className={`flex font-bold text-sm bg-linear-to-r from-pink-50
-		 90 to-purple-100/90 items-center py-6 justify-between lg:h-32 ${menuOpen ? "h-96 flex  justify-center items-center" : "h-32 lg:-flex"} transition all duration-300`}>
-
-			<span className="">
-				<Logo />
-			</span>
-			<div className="flex h-24 justify-around items-center w-full text-md mx-auto px-8">
+		<nav className={`relative flex font-bold text-sm bg-linear-to-r from-pink-50
+		 90 to-purple-100/90 items-center py-6 justify-between lg:h-32 ${menuOpen ? "h-110 flex  justify-center items-center" : "h-32 lg:-flex"} transition all duration-300`}>
 
 
-				<div className="hidden lg:flex items-center  lg:w-full mx-auto">
+
+
+				<div className="absolute flex-col lg:flex justify-between items-center  w-full mx-auto">
+					<div className="relative flex w-full items-center justify-between">
+						<span className="flex lg:hidden h-fit p-4">
+						<Logo />
+						</span>
+						<button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden z-20 flex w-fit p-4 rounded-full m-4 bg-pink-500 shadow-emerald-950/60 shadow-md">
+							{menuOpen ? <BiX /> : <BiMenu />}
+						</button>
+					</div>
+
+					<div className="hidden lg:flex h-24 justify-around items-center w-full text-md mx-auto">
+
+						<span className="hidden md:flex h-fit p-4">
+						<Logo />
+						</span>
 
 					{navLinks.map((link) => (
 						<ul key={link} className="flex items-center justify-center mx-auto gap-2">
@@ -45,7 +56,7 @@ export default function Navbar() {
 					<div>
 
 
-						<div className="flex flex-col md:flex-row items-center gap-2  justify-start mx-auto">
+						<div className="flex flex-col md:flex-row items-center gap-6 p-4 justify-start mx-auto">
 
 
 
@@ -63,7 +74,7 @@ export default function Navbar() {
 								))}
 
 								<div className="flex flex-col items-cente gap-2 h-auto  justify-center mx-auto">
-									<input type="search" className="rounded-lg shadow-black/30 shadow-lg border-black border-2 border-solid" placeholder="Find Blog" />
+									<input type="search" className="rounded-lg shadow-black/30 flex text-centershadow-lg border-black border-2 border-solid" placeholder="Find Blog" />
 									<button type="submit" className="bg-pink-500 px-3 shadow-lg shadow-pink-400/70 py-2 rounded-lg">Get in Touch</button>
 								</div>
 							</div>
@@ -75,12 +86,8 @@ export default function Navbar() {
 
 
 			</div>
-			<button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden z-20 flex w-fit p-4 rounded-full m-4 bg-pink-500 shadow-emerald-950/60 shadow-md">
-				<span>
-					<BiMenu />
-				</span>
-			</button>
-		</div>
+
+		</nav>
 
 
 	)
