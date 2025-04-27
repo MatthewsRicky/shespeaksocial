@@ -6,7 +6,7 @@ const Logo = () => {
 	return (
 		<div className="flex justify-center items-center h-full">
 			<Link href="/">
-				<Image src ="/shespeaksocial.png" alt="logo" width={144} height={60}  />
+				<Image src ="/shespeaksocial.png" alt="logo" width={200} height={1000}  />
 			</Link>
 		</div>
 	)
