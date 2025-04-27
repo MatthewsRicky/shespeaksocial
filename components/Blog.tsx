@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 const Blog = () => {
 
@@ -17,7 +18,11 @@ const Blog = () => {
 	return (
 		<div>
 			{posts.map((post) => (
-				<div key={post.title}></div>
+				<div key={post.title}>
+					<div>
+						<Image src={post.imageUrl} alt={post.imageAlt} width={200} height={200} />
+					</div>
+				</div>
 			))}
 		</div>
 	)
