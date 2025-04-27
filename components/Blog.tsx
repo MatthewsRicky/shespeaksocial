@@ -19,9 +19,16 @@ const Blog = () => {
 		<div>
 			{posts.map((post) => (
 				<div key={post.title}>
-					<div>
-						<Image src={post.imageUrl} alt={post.imageAlt} width={200} height={200} />
+					<div className="">
+						<Image src={post.imageUrl} alt={post.imageAlt} width={200} height={200} className="relative" />
+						<span>{post.imageTitle}</span>
 					</div>
+					<h1>{post.title}</h1>
+					<div className="">
+						<h3>{post.author}</h3>
+						<h4>{post.date}</h4>
+					</div>
+					<p className="">{post.article}</p>
 				</div>
 			))}
 		</div>
