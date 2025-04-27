@@ -39,7 +39,7 @@ const OptionsCarousel = () => {
 				</div>
 
 
-				<div className="">
+				<div className="flex flex-col w-[90%] items-center justify-between">
 					{optionOpen && !individualOpen ? (
 						<ForBusiness />
 					) : (<ForIndividuals />)}
