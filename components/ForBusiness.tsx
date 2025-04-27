@@ -37,9 +37,9 @@ const ForBusiness = () => {
 	},
 ]
 	return (
-		<div className="h-240 m-4 w-full grid grid-cols-1 md:grid-cols-2 md:w-[80%] justify-between items-center rounded-lg gap-12">
+		<div className="m-4 w-full grid grid-cols-1 md:grid-cols-2 md:w-[80%] justify-center items-center rounded-lg gap-12">
 			{businessCard.map((item) => (
-				<div key={item.id} className="flex rounded-xl lg:h-full text-center shadow-violet-400/50 shadow-lg gap-6 flex-col justify-center items-center overflow-none bg-linear-to-b from-pink-50 to-pink-100 h-full w-[80%] mx-auto">
+				<div key={item.id} className="flex rounded-xl lg:h-fit text-center shadow-violet-400/50 shadow-lg gap-6 flex-col justify-center items-center overflow-none bg-linear-to-b from-pink-50 to-pink-100 h-full w-[80%] mx-auto">
 					<Image src={item.imageUrl} alt={item.alt} width={400} height={400} className="flex cover shadow-lg w-full hover:scale-105 transition-all duration-200 shadow-violet-400/30"/>
 					<h1 className="text-center font-medium uppercase text-sm p-1 shadow-sm mx-3 rounded-md text-slate-900 shadow-violet-300">{item.title}</h1>
 					<p className="font-normal text-center p-2 mx-2 text-sm">{item.description}</p>
