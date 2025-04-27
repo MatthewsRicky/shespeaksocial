@@ -15,7 +15,11 @@ const Blog = () => {
 	]
 
 	return (
-		<div>Blog</div>
+		<div>
+			{posts.map((post) => (
+				<div key={post.title}></div>
+			))}
+		</div>
 	)
 }
 export default Blog
