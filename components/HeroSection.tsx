@@ -41,7 +41,7 @@ export default function HeroSection() {
 	const handlePrev = () => setIndex((index) =>(index - 1 + slides.length) % slides.length);
 
 	return (
-		<section className="relative h-[65vh] md:h-[80vh] flex items-center justify-center text-white">
+		<section className="relative h-[65vh] flex items-center justify-center text-white">
 			{/* Background Image Slideshow */}
 			<div className="absolute inset-0">
 				<AnimatePresence>
