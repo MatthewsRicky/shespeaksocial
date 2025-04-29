@@ -91,9 +91,10 @@ const Blog = () => {
 		<main className="grid grid-cols-3 p-8">
 			{posts.map((post) => (
 				<section key={post.title} className="relative flex flex-col items-center gap-6 justify-center">
-					<div className="">
-						<Image src={post.imageUrl} alt={post.imageAlt} width={500} height={500} className="w-full" />
+					<div className="relative">
 						<span className="absolute right-1 bottom-[50%] text-slate-850  z-100">{post.imageTitle}</span>
+						<Image src={post.imageUrl} alt={post.imageAlt} width={500} height={500} className="w-full" />
+
 					</div>
 					<h1>{post.title}</h1>
 					<div className="">
