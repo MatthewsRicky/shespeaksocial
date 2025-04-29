@@ -94,9 +94,8 @@ const Blog = () => {
 					<div className="relative">
 						<span className="absolute right-2 bottom-[5%] bg-pink-300 p-1 rounded-sm py-0.5 text-slate-800 z-100">{post.imageTitle}</span>
 						<Image src={post.imageUrl} alt={post.imageAlt} width={500} height={500} className="w-full" />
-
 					</div>
-					<h1>{post.title}</h1>
+					<h1 className="text-xl font-semibold text-center ">{post.title}</h1>
 					<div className="">
 						<h3>{post.author}</h3>
 						<h4>{post.date}</h4>
