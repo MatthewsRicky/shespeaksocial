@@ -92,7 +92,7 @@ const Blog = () => {
 			{posts.map((post) => (
 				<section key={post.title} className="relative flex flex-col items-center gap-6 justify-center">
 					<div className="relative">
-						<span className="absolute right-1 bottom-[50%] text-slate-850  z-100">{post.imageTitle}</span>
+						<span className="absolute right-2 bottom-[5%] bg-pink-300 p-1 rounded-sm py-0.5 text-slate-800 z-100">{post.imageTitle}</span>
 						<Image src={post.imageUrl} alt={post.imageAlt} width={500} height={500} className="w-full" />
 
 					</div>
