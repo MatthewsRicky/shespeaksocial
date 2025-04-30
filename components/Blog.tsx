@@ -89,13 +89,13 @@ const Blog = () => {
 	]
 
 	return (
-		<div className="flex">
-			<main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center m-16">
+		<div className="flex items-center my-auto justify-start">
+			<main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center m-16">
 				{posts.map((post) => (
-					<section key={post.title} className="relative flex flex-col items-center gap-6 justify-center m-4 rounded-xl bg-linear-to-b from-pink-50 to-pink-100">
+					<section key={post.title} className="relative flex flex-col max-h-180 items-center gap-6 justify-center m-4 rounded-xl bg-linear-to-b from-pink-50 to-pink-100">
 						<div className="relative">
 							<span className="absolute right-2 bottom-[5%] bg-pink-300 p-1 rounded-sm py-0.5 text-slate-800 z-100">{post.imageTitle}</span>
-							<Image src={post.imageUrl} alt={post.imageAlt} width={500} height={500} className="w-full rounded-t-xl" />
+							<Image src={post.imageUrl} alt={post.imageAlt} width={500} height={500} className="flex w-full min-h-80-h-100 rounded-t-xl" />
 						</div>
 						<section className="flex p-2 justify-center items-center flex-col gap-6">
 							<h1 className="text-xl font-semibold text-center">{post.title}</h1>
