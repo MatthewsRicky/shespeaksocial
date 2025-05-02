@@ -33,7 +33,7 @@ const ForIndividuals = () => {
 	return (
 		<div className="flex justify-between h-full items-center rounded-lg  gap-8 m-4 my-24 px-3 py-4">
 			{individual.map((item) => (
-				<div key={item.id} className="flex flex-col items-center justify-between h-100 md:h-full py-4 px-2 shadow-md shadow-pink-200 gap-y-4">
+				<div key={item.id} className="flex flex-col items-center justify-between h-100 md:h-full py-4 px-2 shadow-md shadow-violet-300 gap-y-4 bg-linear-to-b from-violet-50 to-pink-100">
 					<Image src={item.imgurl} alt={item.alt} width={500} height={500} className="rounded-md flex" />
 					<h1 className="font-bold text-lg text-slate-800">{item.title}</h1>
 					<p className="font-semibold text-md text-slate-700 text-center">{item.description}</p>
