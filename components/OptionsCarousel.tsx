@@ -26,7 +26,7 @@ const OptionsCarousel = () => {
 			{/*</div>*/}
 
 			<div className="flex flex-col w-[90%] items-center justify-between">
-				<div className="flex justify-between gap-80 items-center w-[90%] px-6 py-4 bg-violet-950 text-pink-100 hover:text-pink-50">
+				<div className="flex justify-between gap-80 items-center w-[90%] px-6 py-4 bg-linear-to-br from-pink-50 to-pink-100 text-slate-800 rounded-md shadow-lg shadow-violet-300">
 					<button onClick={() => {
 						setOptionOpen(!optionOpen)
 						setIndividualOpen(!individualOpen)
