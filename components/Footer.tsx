@@ -7,7 +7,7 @@ const Footer = () => {
 
 
 		<section
-			className="flex flex-col items-center gap-6 justify-center mx-0 bg-linear-to-b from-pink-50 to-violet-950 text-pink-900 w-full">
+			className="flex flex-col items-center gap-6 justify-center mx-0 bg-linear-to-b from-slate-700 to-slate-950 text-white w-full">
 			<div className="flex flex-col items-center justify-center gap-6 my-4">
 				<div className="grid grid-cols-2 lg:grid-cols-4  gap-8 p-4 items-center justify-center">
 					<div className="flex flex-col items-center gap-6 px-2 py-1 text-center rounded-lg shadow-md shadow-violet-300/20 my-3">
