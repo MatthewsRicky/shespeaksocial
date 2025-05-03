@@ -1,6 +1,13 @@
 @import 'tailwindcss';
 
-
+@theme {
+	--color-pink-50: rgb(250, 237, 250);
+	--color-pink-200: #F77FBE;
+	--color-pink-100: #FFB8E0;
+	--color-pink-300: #EC7FA9;
+	--color-pink-500: #BE5985;
+	--color-deep-pink: #FF1493;
+}
 
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
