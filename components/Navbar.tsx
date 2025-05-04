@@ -24,7 +24,7 @@ export default function Navbar() {
 						<span className="flex lg:hidden h-fit p-4">
 						<Logo />
 						</span>
-						<button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden z-20 flex w-fit p-4 rounded-full m-4 bg-pink-500 shadow-emerald-950/60 shadow-md">
+						<button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden z-20 flex w-fit p-4 rounded-full m-4 bg-deep-pink/80 text-xl text-white font-bold shadow-emerald-950/60 shadow-md">
 							{menuOpen ? <BiX /> : <BiMenu />}
 						</button>
 					</div>
@@ -47,7 +47,7 @@ export default function Navbar() {
 
 					<div className="flex flex-col md:flex-row items-center gap-2  justify-center mx-auto">
 						<input type="search" className="w-24 text-center flex justify-center rounded-lg shadow-black/30 shadow-lg border-black border-2 border-solid" placeholder="Find Blog" />
-						<button type="submit" className=" flex flex-row justify-center items-center bg-pink-500 px-1 shadow-lg shadow-pink-400/70 py-1 rounded-lg">Get in Touch</button>
+						<button type="submit" className=" flex flex-row justify-center items-center bg-deep-pink/80 px-1 shadow-lg shadow-pink-400/70 py-1 rounded-lg">Get in Touch</button>
 					</div>
 
 				</div>
@@ -75,7 +75,7 @@ export default function Navbar() {
 
 								<div className="flex flex-col items-cente gap-2 h-auto  justify-center mx-auto">
 									<input type="search" className="rounded-lg shadow-black/30 flex text-centershadow-lg border-black border-2 border-solid" placeholder="Find Blog" />
-									<button type="submit" className="bg-pink-500 px-3 shadow-lg shadow-pink-400/70 py-2 rounded-lg">Get in Touch</button>
+									<button type="submit" className="bg-deep-pink/80 px-3 shadow-lg shadow-pink-400/70 py-2 text-slate-50 rounded-lg">Get in Touch</button>
 								</div>
 							</div>
 						</div>
