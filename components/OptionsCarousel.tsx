@@ -46,11 +46,6 @@ const OptionsCarousel = () => {
 				</div>
 			</div>
 
-
-
-
-
-
 		</section>
 			)
 }
