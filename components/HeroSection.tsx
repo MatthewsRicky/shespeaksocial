@@ -82,13 +82,13 @@ export default function HeroSection() {
 			<div className="absolute inset-0 flex items-center justify-between px-4 z-10">
 				<button
 					onClick={handleNext}
-					className="p-2  bg-pink-500/60 hover:bg-pink-500/80 transition-all rounded-full"
+					className="p-2  bg-deep-pink hover:bg-deep-pink/70  transition-all rounded-full"
 				>
 					<BiChevronLeft className="w-6 h-6" />
 				</button>
 				<button
 					onClick={handlePrev}
-					className="p-2 bg-pink-500/60 hover:bg-pink-500/80 transition-all rounded-full"
+					className="p-2 bg-deep-pink hover:bg-deep-pink/70 transition-all rounded-full"
 				>
 					<BiChevronRight className="w-6 h-6" />
 				</button>
