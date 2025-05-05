@@ -5,7 +5,7 @@
  import ForBusiness from "./ForBusiness";
 
 const OptionsCarousel = () => {
-	const [optionOpen, setOptionOpen] = useState(true);
+	const [optionOpen, setOptionOpen] = useState(false);
   const [individualOpen, setIndividualOpen] = useState(false);
 
 
@@ -26,14 +26,15 @@ const OptionsCarousel = () => {
 			{/*</div>*/}
 
 			<div className="flex flex-col w-[90%] items-center justify-between">
-				<div className="flex justify-between gap-80 items-center w-[90%] px-6 py-4 bg-linear-to-br from-pink-50 to-pink-100 text-slate-800 rounded-md shadow-lg shadow-violet-300">
-					<button onClick={() => {
-						setOptionOpen(!optionOpen)
-						setIndividualOpen(!individualOpen)
+				<div className="flex justify-between gap-80 items-center w-[90%] px-6 py-4 bg-linear-to-br from-white to-pink-50 text-slate-600 rounded-md shadow-lg shadow-violet-300 font-bold">
+					<button className="hover:cursor-pointer" onClick={() => {
+						setOptionOpen(!optionOpen);
+
 					}}>For Businesses</button>
-					<button onClick={() => {
-						setIndividualOpen(!individualOpen)
-						setOptionOpen(!optionOpen)
+					<button className="hover:cursor-pointer" onClick={() => {
+						setIndividualOpen(!individualOpen);
+
+
 					}}>For Individuals</button>
 
 				</div>
