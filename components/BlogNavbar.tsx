@@ -7,13 +7,22 @@ import {BiMenu, BiX} from "react-icons/bi";
 
 const BlogNavbar = () => {
 
+	const BlogLinks = [
+		{name: "Home", link: "/home" },
+		{name: "News & Updates", link: "/home" },
+		{name: "Trending Topics", link: "/home" },
+		{name: "Digital Marketing", link: "/home" },
+		{name: "Freelance Tips", link: "/home" },
+		{name: "How-To-Tips", link: "/home" },
+		{name: "Opinion", link: "/home" },
+		{name: "Careers", link: "/home" },
+	]
+
 	const [menuOpen, setMenuOpen] = useState(false);
-
-
 
 	return (
 		<nav className="relative items-center justify-between mx-auto w-full gap-6">
-			<div className="flex flex-col h-screen  w-[30%] md:w-[40%] bg-slate-950">
+			<div className="absolute flex flex-col h-screen  w-[30%] md:w-[40%] bg-slate-950">
 				<div className="flex">
 					<Link href="/" className="z-20">
 							<Logo />
@@ -23,35 +32,14 @@ const BlogNavbar = () => {
 					</button>
 				</div>
 
+				{BlogLinks.map((link) => (
+					<ul key={link.name} className="z-10 flex flex-col lg:flex-row justify-center items-center h-fit text-white mx-auto gap-8">
+						<li>
+							<Link href={link.link}>{link.name}</Link>
+						</li>
+					</ul>
+				))}
 
-				<ul className="absolute z-10 flex flex-col lg:flex-row justify-center items-center h-fit text-white mx-auto gap-8">
-
-
-					<Link href="/">
-						<li>Home</li>
-					</Link>
-					<Link href="/">
-						<li>News & Updates</li>
-					</Link>
-					<Link href="/">
-						<li>Trending Topics</li>
-					</Link>
-					<Link href="/">
-						<li>Digital Marketing</li>
-					</Link>
-					<Link href="/">
-						<li>Freelance Tips</li>
-					</Link>
-					<Link href="/">
-						<li>How-To-Tips</li>
-					</Link>
-					<Link href="/">
-						<li>Opinion</li>
-					</Link>
-					<Link href="/">
-						<li>Careers</li>
-					</Link>
-				</ul>
 			</div>
 
 
