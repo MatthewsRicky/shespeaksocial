@@ -21,13 +21,13 @@ const BlogNavbar = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	return (
-		<nav className="relative items-center justify-between mx-auto w-full gap-6">
-			<div className="absolute flex flex-col h-screen  w-[30%] md:w-[40%] bg-slate-950">
+		<nav className="relative items-center justify-between mx-auto w-full gap-6 transition-all duration-300">
+			<div className="absolute flex flex-col lg:flex-row items-center lg:h-[12vh] h-screen  w-[30%] md:w-[40%] lg:w-screen bg-slate-950">
 				<div className="flex">
 					<Link href="/" className="z-20">
 							<Logo />
 					</Link>
-					<button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden z-20 flex w-fit p-4 rounded-full m-4 bg-deep-pink/80 text-xl text-white font-bold shadow-emerald-950/60 shadow-md">
+					<button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden z-20 flex w-fit p-4 rounded-full m-4 bg-deep-pink/30 hover:bg-deep-pink/80  text-xl text-white font-bold shadow-emerald-950/60 shadow-md">
 						{menuOpen ? <BiX /> : <BiMenu />}
 					</button>
 				</div>
