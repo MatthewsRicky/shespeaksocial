@@ -25,5 +25,5 @@
 body {
 	margin: 0;
 	box-sizing: border-box;
-	@apply bg-linear-to-b from-pink-50 to-violet-50;
+	@apply bg-linear-to-b from-pink-50 to-violet-50 xl:w-[85%] mx-auto;
 }
