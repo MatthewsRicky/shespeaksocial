@@ -8,14 +8,14 @@ import {BiMenu, BiX} from "react-icons/bi";
 const BlogNavbar = () => {
 
 	const BlogLinks = [
-		{name: "Home", link: "/home" },
-		{name: "News & Updates", link: "/home" },
-		{name: "Trending Topics", link: "/home" },
-		{name: "Digital Marketing", link: "/home" },
-		{name: "Freelance Tips", link: "/home" },
-		{name: "How-To-Tips", link: "/home" },
-		{name: "Opinion", link: "/home" },
-		{name: "Careers", link: "/home" },
+		{name: "Home", link: "/" },
+		{name: "News & Updates", link: "/" },
+		{name: "Trending Topics", link: "/" },
+		{name: "Digital Marketing", link: "/" },
+		{name: "Freelance Tips", link: "/" },
+		{name: "How-To-Tips", link: "/" },
+		{name: "Opinion", link: "/" },
+		{name: "Careers", link: "/" },
 	]
 
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -33,11 +33,10 @@ const BlogNavbar = () => {
 				</div>
 
 				{BlogLinks.map((link) => (
-					<ul key={link.name} className="z-10 flex flex-col lg:flex-row justify-center items-center h-fit text-white mx-auto gap-8">
-						<li>
+					<div key={link.name} className="z-10 flex flex-col lg:flex-row justify-center items-center h-fit text-white mx-auto gap-8">
+
 							<Link href={link.link}>{link.name}</Link>
-						</li>
-					</ul>
+					</div>
 				))}
 
 			</div>
