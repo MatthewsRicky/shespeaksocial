@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <main className="xl:w-[85%] mx-auto">
+      <main>
 	      <Navbar />
 	      {children}
 	      <Footer />
