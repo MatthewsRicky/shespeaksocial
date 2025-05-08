@@ -21,27 +21,31 @@ const BlogNavbar = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	return (
-		<nav className="relative items-center justify-between mx-auto w-full gap-6 transition-all duration-300">
-			<div className="absolute flex flex-col lg:flex-row items-center lg:h-[12vh] h-screen  w-[30%] md:w-[40%] lg:w-screen bg-slate-950">
-				<div className="flex">
-					<Link href="/" className="z-20">
+		<nav className="relative flex flex-col items-start justify-start mx-auto w-full gap-6 transition-all duration-300">
+		<div className={`absolute flex flex-col lg:flex-row items-center lg:h-[12vh] w-[48%] lg:w-screen bg-slate-950 ${menuOpen ? 'h-screen' : 'w-full'}`}>
+				<div className="flex p-2 justify-between items-center mx-auto my-6">
+					<Link href="/" className="flex p-4 z-20">
 							<Logo />
 					</Link>
-					<button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden z-20 flex w-fit p-4 rounded-full m-4 bg-deep-pink/30 hover:bg-deep-pink/80  text-xl text-white font-bold shadow-emerald-950/60 shadow-md">
+					<button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden z-20 flex w-fit p-4 rounded-full m-4 bg-deep-pink/80 hover:bg-deep-pink/100  text-xl text-white font-bold shadow-emerald-950/60 shadow-md">
 						{menuOpen ? <BiX /> : <BiMenu />}
 					</button>
 				</div>
+					<ul className={`z-10 flex flex-col lg:flex-row justify-start items-start h-72 mt-20 text-white gap-8 ${menuOpen ? '' : 'hidden'}`}>
+						{BlogLinks.map((link) => (
 
-				{BlogLinks.map((link) => (
-					<div key={link.name} className="z-10 flex flex-col lg:flex-row justify-center items-center h-fit text-white mx-auto gap-8">
+								<Link key={link.name} className="flex items-start justify-start" href={link.link}>{link.name}</Link>
+						))}
+					</ul>
 
-							<Link href={link.link}>{link.name}</Link>
-					</div>
-				))}
+					<ul className={`z-10 hidden lg:flex lg:flex-row justify-center items-center h-12  text-white gap-8`}>
+						{BlogLinks.map((link) => (
+
+							<Link key={link.name} className="flex items-start justify-start" href={link.link}>{link.name}</Link>
+						))}
+					</ul>
 
 			</div>
-
-
 		</nav>
 	)
 }
