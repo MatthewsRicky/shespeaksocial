@@ -22,7 +22,7 @@ const BlogNavbar = () => {
 
 	return (
 		<nav className="relative flex flex-col items-start justify-start mx-auto w-full gap-6 transition-all duration-300">
-		<div className={`absolute flex flex-col lg:flex-row items-center lg:h-[12vh] w-[48%] lg:w-screen bg-slate-950 ${menuOpen ? 'h-screen' : 'w-full'}`}>
+		<div className={`absolute flex flex-col lg:flex-row items-center lg:h-[12vh] w-[48%] lg:w-screen bg-violet-950/95 lg:text-slate-800 lg:bg-linear-to-r from-pink-50 to-pink-100 ${menuOpen ? 'h-screen' : 'w-full'}`}>
 				<div className="flex p-2 justify-between items-center mx-auto my-6">
 					<Link href="/" className="flex p-4 z-20">
 							<Logo />
@@ -38,7 +38,7 @@ const BlogNavbar = () => {
 						))}
 					</ul>
 
-					<ul className={`z-10 hidden lg:flex lg:flex-row justify-center items-center h-12  text-white gap-8`}>
+					<ul className={`z-10 hidden lg:flex lg:flex-row justify-center items-center h-12  gap-8`}>
 						{BlogLinks.map((link) => (
 
 							<Link key={link.name} className="flex items-start justify-start" href={link.link}>{link.name}</Link>
