@@ -21,9 +21,8 @@ const Blog = () => {
 					</div>
 
 				))}
-				<BlogSideBar />
 			</section>
-
+			<BlogSideBar />
 		</main>
 	)
 }
