@@ -1,12 +1,14 @@
 import React from 'react'
 
 import FounderAbout from "@/components/FounderAbout";
+import ServiceCards from "@/components/ServiceCards";
 
 const Page = () => {
 	return (
 		<div>
 			<FounderAbout />
-			</div>
+			<ServiceCards />
+		</div>
 	)
 }
 export default Page
