@@ -31,13 +31,17 @@ const ForIndividuals = () => {
 	]
 
 	return (
-		<div className="flex md:w-[90%] flex-col md:flex-row justify-between min-h-fit items-center rounded-lg  gap-8 m-4 my-24 px-3 py-4">
+		<div className="flex md:w-[90%] flex-col md:flex-row justify-between min-h-full items-center rounded-lg  gap-8 m-4 my-24 px-3 py-4">
 			{individual.map((item) => (
-				<div key={item.id} className="flex flex-col items-center justify-between h-100 md:h-full py-4 px-2 shadow-md shadow-violet-300 gap-y-4 bg-linear-to-b from-violet-50 to-pink-100">
+				<div key={item.id} className="flex flex-col items-center justify-between h-125 md:h-full shadow-md shadow-violet-300 gap-y-4 bg-linear-to-b from-violet-50 to-violet-100">
 					<Image src={item.imgurl} alt={item.alt} width={500} height={500} className="rounded-md flex" />
-					<h1 className="font-bold text-lg text-slate-800">{item.title}</h1>
-					<p className="font-semibold text-md text-slate-700 text-center">{item.description}</p>
-					<button className="border my-2 px-3 py-2 rounded-sm bg-pink-400/90 text-slate-800 hover:scale-105 hover:bg-pink-500 hover:text-slate-200 transition-all duration-200 hover:shadow-pink-500 hover:shadow-sm hover:border-pink-500 border-pink-300 text-center">{item.btnlabel}</button>
+					<div className="flex flex-col py-4 px-2 items-center justify-center gap-6">
+						<h1 className="font-bold text-lg bg-linear from-pink-50 to-violet-200 shadow-lg shadow-violet-300 px-2 py-1 rounded-md text-violet-900">{item.title}</h1>
+						<p className="font-semibold text-md text-slate-700 text-center">{item.description}</p>
+						<button className="border my-2 px-3 py-2 rounded-sm hover:bg-pink-300 font-bold hover:text-violet-900 hover:scale-105 bg-pink-500 text-slate-200 transition-all duration-200 hover:shadow-pink-500 hover:shadow-sm hover:border-pink-500 border-pink-300 text-center shadow-md shadow-violet-300">
+							{item.btnlabel}
+						</button>
+					</div>
 				</div>
 			))}
 		</div>
