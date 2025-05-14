@@ -39,7 +39,7 @@ const ServiceCards = () => {
 				<div className="flex flex-col md:flex-row items-center justify-between px-4 py-3 m-w-[90%] lg:w-[80%] mx-auto rounded-lg  m-4  text-slate-900">
 
 					{service.map((service) => (
-						<section  key={service.id} className="odd:translate-y-0.5 even:translate-y-[-0.5]">
+						<section  key={service.id} className="odd:translate-y-[-10] even:translate-y-10">
 							<div className="flex sm:flex-col items-center justify-around text-center h-[40%] w-[90%]  rounded-lg  min-h-[28rem] py-4 px-2 m-2 sm:m-3 lg:m-4 bg-linear-to-b from-violet-50 to-pink-100 shadow-violet-600/20 shadow-xl hover:scale-105 transition-all ease-in-out">
 								<Image src={service.imgUrl} alt="make-money icon" width={50} height={50} />
 								<div className="flex-col gap-4 items-center justify-between py-3.5 rounded-lg px-2 ">
