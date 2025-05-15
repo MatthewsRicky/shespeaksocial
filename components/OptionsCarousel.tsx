@@ -6,7 +6,6 @@
 
 const OptionsCarousel = () => {
 	const [optionOpen, setOptionOpen] = useState(false);
-  const [individualOpen, setIndividualOpen] = useState(false);
 
 
 	return (
@@ -25,25 +24,24 @@ const OptionsCarousel = () => {
 
 			{/*</div>*/}
 
-			<div className="flex flex-col lg:w-[65%] items-center justify-between">
-				<div className="flex justify-between items-center w-[90%] px-6 py-4 bg-linear-to-br from-white to-pink-50 text-slate-600 rounded-md shadow-lg shadow-violet-300 font-bold">
-					<button className="hover:cursor-pointer" onClick={() => {
+			<div className="flex flex-col items-center justify-between">
+				<div className="flex flex-col md:flex-row justify-center mx-auto gap-6 items-center ">
+					<button className="hover:cursor-pointer bg-pink-500 min-w-full px-2 py-2 text-slate-100 rounded-md shadow-lg shadow-violet-300 font-bold" onClick={() => {
+						setOptionOpen(optionOpen);
+					}}>
+						For Businesses
+					</button>
+					<button className="hover:cursor-pointer bg-pink-500 min-w-full px-2 py-2 text-slate-100 rounded-md shadow-lg shadow-violet-300 font-bold" onClick={() => {
 						setOptionOpen(!optionOpen);
-
-					}}>For Businesses</button>
-					<button className="hover:cursor-pointer" onClick={() => {
-						setIndividualOpen(!individualOpen);
-
-
-					}}>For Individuals</button>
-
+					}}>
+						For Individuals
+					</button>
 				</div>
-
-
 				<div className="flex flex-col w-[90%] items-center mx-auto justify-between">
-					{optionOpen && !individualOpen ? (
-						<ForBusiness />
-					) : (<ForIndividuals />)}
+					<ForBusiness />
+				</div>
+				<div className="flex flex-col w-[90%] items-center mx-auto justify-between">
+					<ForIndividuals />
 				</div>
 			</div>
 
