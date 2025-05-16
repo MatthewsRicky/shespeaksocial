@@ -28,6 +28,7 @@ const OptionsCarousel = () => {
 				<div className="flex flex-col md:flex-row justify-center mx-auto gap-6 items-center ">
 					<button className="hover:cursor-pointer bg-pink-500 min-w-full px-2 py-2 text-slate-100 rounded-md shadow-lg shadow-violet-300 font-bold" onClick={() => {
 						setOptionOpen(optionOpen);
+
 					}}>
 						For Businesses
 					</button>
@@ -37,12 +38,12 @@ const OptionsCarousel = () => {
 						For Individuals
 					</button>
 				</div>
-				<div className="flex flex-col w-[90%] items-center mx-auto justify-between">
-					<ForBusiness />
-				</div>
-				<div className="flex flex-col w-[90%] items-center mx-auto justify-between">
-					<ForIndividuals />
-				</div>
+				{/*<div className={`${!optionOpen ?"flex flex-col w-[90%] items-center mx-auto justify-between" : "invisible"}`}>*/}
+				{/*	<ForBusiness />*/}
+				{/*</div>*/}
+				{/*<div className={`${optionOpen ?"flex flex-col w-[90%] items-center mx-auto justify-between" : "invisible"}`}>*/}
+				{/*	<ForIndividuals />*/}
+				{/*</div>*/}
 			</div>
 
 		</section>
