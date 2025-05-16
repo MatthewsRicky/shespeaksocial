@@ -4,6 +4,7 @@ import "../../globals.css";
 
 import React from "react";
 import BlogNavbar from "@/components/BlogNavbar";
+import BlogFooter from "@/components/BlogFooter";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
 				<div>
 					<BlogNavbar />
 					{children}
+					<BlogFooter />
 				</div>
 			</body>
 		</html>
