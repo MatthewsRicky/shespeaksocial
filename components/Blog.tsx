@@ -12,7 +12,7 @@ const Blog = () => {
 		      <div key={post.id} className="relative flex flex-col items-center justify-between h-full sm:mx-4 w-[95%] mx-auto rounded-md gap-4">
 			      <div className="relative flex items-center justify-between w-full h-64">
 				      <Image src={post.imageUrl} alt={post.imageAlt} width={500} height={500} className="absolute flex w-full justify-start h-full" />
-				      <span className="absolute right-2 bottom-8 text-slate-100 bg-deep-pink/70 px-3 py-2 rounded-md">{post.imageTitle}</span>
+				      <span className="absolute left-1 bottom-0 text-slate-100 bg-slate-900 hover:bg-deep-pink/70 px-2 py-1 rounded-md">{post.imageTitle}</span>
 			      </div>
 
 			      <h1 className="text-xl font-bold text-center">{post.title}</h1>
