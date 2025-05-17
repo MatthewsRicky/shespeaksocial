@@ -21,8 +21,8 @@ const BlogNavbar = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	return (
-		<nav className="fixed z-20 flex flex-col items-start justify-start mx-auto w-full gap-6 transition-all duration-300">
-		<div className={`absolute flex flex-col lg:flex-row items-center lg:h-[12vh] w-[48%] lg:w-screen xl:w-[85%] bg-violet-950/95 lg:text-slate-800 lg:bg-linear-to-r from-pink-50 to-pink-100 ${menuOpen ? 'h-screen' : 'w-full'}`}>
+		<nav className="fixed z-20 lg:h-32 flex flex-col items-start justify-start lg:items-center lg:justify-center mx-auto w-full gap-6 transition-all duration-300">
+		<div className={`absolute flex flex-col lg:flex-row items-center justify-center mx-auto lg:h-[12vh] w-[48%] lg:w-screen xl:w-[85%] bg-violet-950/95 lg:text-slate-800 lg:bg-linear-to-r from-pink-50 to-pink-100 ${menuOpen ? 'h-screen' : 'w-screen'}`}>
 				<div className="flex p-2 justify-between items-center mx-auto my-6">
 					<Link href="/" className="flex p-4 z-20">
 							<Logo />
@@ -31,7 +31,7 @@ const BlogNavbar = () => {
 						{menuOpen ? <BiX /> : <BiMenu />}
 					</button>
 				</div>
-					<ul className={`z-10 flex flex-col lg:flex-row justify-start items-start h-72 mt-20 text-white gap-8 ${menuOpen ? '' : 'hidden'}`}>
+					<ul className={` flex flex-col lg:flex-row justify-start items-start h-72 mt-20 text-white gap-8 ${menuOpen ? '' : 'hidden'}`}>
 						{BlogLinks.map((link) => (
 
 								<Link key={link.name} className="flex items-start justify-start" href={link.link}>{link.name}</Link>
