@@ -25,7 +25,7 @@ const Blog = () => {
 
 	      ))}
       </section>
-				<div className="hidden right-0 lg:w-[22%] h-fit lg:flex">
+				<div className="hidden right-0 lg:w-[33%] h-screen lg:flex">
 					<BlogSideBar />
 				</div>
 
