@@ -2,6 +2,12 @@
 
 @theme {
 	--color-deep-pink: #FF1493;
+	--color-serenade: #fff6e7;
+	--color-cararra: #eeefe9;
+	--color-sorrell-brown: #d1bd91;
+	--color-bright-turquoise: #04befa;
+	--color-razzmataz: #f21774;
+	--color-yellow-orange: #ffb13e;
 }
 
 /*
@@ -25,5 +31,6 @@
 body {
 	margin: 0;
 	box-sizing: border-box;
-	@apply bg-linear-to-b from-pink-50 to-violet-50 xl:w-[95vw] mx-auto;
+	@apply bg-cararra xl:w-[95vw] mx-auto;
 }
+
