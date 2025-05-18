@@ -22,28 +22,28 @@ const BlogNavbar = () => {
 
 	return (
 		<nav className="fixed z-20 lg:h-32 flex flex-col items-start justify-start lg:items-center lg:justify-center mx-auto w-full gap-6 transition-all duration-300">
-		<div className={`absolute flex flex-col lg:flex-row items-center justify-center mx-auto lg:h-[12vh] w-[48%] lg:w-screen xl:w-[85%] bg-violet-950/95 lg:text-slate-800 lg:bg-linear-to-r from-pink-50 to-pink-100 ${menuOpen ? 'h-screen' : 'w-screen'}`}>
+		<div className={`absolute flex flex-col lg:flex-row items-center justify-center mx-auto lg:h-[12vh] w-[48%] lg:w-[95%] lg:px-4 xl:w-[85%] lg:text-serenade lg:text-sm lg:rounded-xl bg-slate-900/90 ${menuOpen ? 'h-screen' : 'w-screen'}`}>
 				<div className="flex p-2 justify-between items-center mx-auto my-6">
 					<Link href="/" className="flex p-4 z-20">
 							<Logo />
 					</Link>
-					<button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden z-20 flex w-fit p-4 rounded-full m-4 bg-deep-pink/80 hover:bg-deep-pink/100  text-xl text-white font-bold shadow-emerald-950/60 shadow-md">
+					<button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden z-20 flex w-fit p-3 rounded-full m-4 bg-bright-turquoise hover:bg-yellow-orange text-2xl text-white font-bold shadow-emerald-950/60 shadow-md transition-all duratiom-300">
 						{menuOpen ? <BiX /> : <BiMenu />}
 					</button>
 				</div>
-					<ul className={` flex flex-col lg:flex-row justify-start items-start h-72 mt-20 text-white gap-8 ${menuOpen ? '' : 'hidden'}`}>
+					<ul className={` flex flex-col lg:flex-row justify-start items-start h-72 mt-20 text-razzmataz gap-8 text-lg font-bold ${menuOpen ? 'lg:hidden' : 'hidden'}`}>
 						{BlogLinks.map((link) => (
 
 								<Link key={link.name} className="flex items-start justify-start" href={link.link}>{link.name}</Link>
 						))}
 					</ul>
 
-					<ul className={`z-10 hidden lg:flex lg:flex-row justify-center items-center h-12 mx-auto gap-8`}>
-						{BlogLinks.map((link) => (
+				<ul className={`z-10 hidden lg:flex lg:flex-row justify-center items-center h-12 mx-auto gap-8`}>
+					{BlogLinks.map((link) => (
 
-							<Link key={link.name} className="flex items-start justify-start" href={link.link}>{link.name}</Link>
-						))}
-					</ul>
+						<Link key={link.name} className="flex items-start justify-start" href={link.link}>{link.name}</Link>
+					))}
+				</ul>
 
 			</div>
 		</nav>
