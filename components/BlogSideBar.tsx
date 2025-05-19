@@ -9,15 +9,24 @@ import DontMiss from "@/components/DontMiss";
 
 const BlogSideBar = () => {
 	return (
-		<div className="flex scroll-auto flex-col gap items-center justify-between h-screen mt-32 px-2 mx-2">
+		<div className="flex scroll-auto flex-col gap items-start justify-start h-screen mt-32 px-2 mx-2">
 			<div className="flex  flex-col h-full justify-start gap-6">
-				<div><DontMiss /></div>
-				<div><StayInTouch /> </div>
-				<div><OurPick /></div>
-				<div><Hot /></div>
-				<div><Subscribe /></div>
+				<div>
+					<DontMiss />
+				</div>
+				<div>
+					<StayInTouch />
+				</div>
+				<div>
+					<OurPick />
+				</div>
+				<div>
+					<Hot />
+				</div>
+				<div>
+					<Subscribe />
+				</div>
 			</div>
-
 		</div>
 	)
 }
