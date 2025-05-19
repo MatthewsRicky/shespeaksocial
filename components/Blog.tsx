@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Blog = () => {
 	return (
-		<main className="relative flex items-center gap-8 justify-center lg:w-[95%]">
+		<main className="relative flex items-start gap-8 justify-center lg:w-[95%]">
       <section className="md:w-[70%] lg:w-[65%] grid md:grid-cols-2 gap-8 items-center justify-center mt-48 lg:my-32">
 	      {posts.map((post) => (
 		      <div key={post.id} className="relative bg-white shadow-md shadow-violet-300 flex flex-col items-center justify-between h-full w-[95%] text-start mx-auto rounded-md gap-4">
@@ -25,9 +25,9 @@ const Blog = () => {
 		      </div>
 	      ))}
       </section>
-				<div className="hidden right-0 lg:w-[30%] xl:w-[25%] h-screen lg:flex">
-					<BlogSideBar />
-				</div>
+			<div className="hidden lg:w-[30%] xl:w-[25%] lg:flex justify-start items-start">
+				<BlogSideBar />
+			</div>
 		</main>
 	)
 }
