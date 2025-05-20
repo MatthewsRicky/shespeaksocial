@@ -22,7 +22,7 @@ const BlogNavbar = () => {
 
 	return (
 		<nav className="fixed z-20 lg:h-32 flex flex-col items-start justify-start lg:items-center lg:justify-center mx-auto w-full gap-6 transition-all duration-300">
-		<div className={`absolute flex flex-col lg:flex-row items-center justify-center mx-auto lg:h-[12vh] w-[48%] lg:w-[95%] lg:px-4 xl:w-[85%] lg:text-serenade lg:text-sm lg:rounded-xl bg-slate-900/90 ${menuOpen ? 'h-screen' : 'w-screen'}`}>
+		<div className={`shadow-lg shadow-slate-800/50 absolute flex flex-col lg:flex-row items-center justify-center mx-auto lg:h-[12vh] w-[48%] lg:w-[95%] lg:px-4 xl:w-[85%] lg:text-serenade lg:text-sm lg:rounded-xl bg-slate-900/90 ${menuOpen ? 'h-screen' : 'w-screen'}`}>
 				<div className="flex p-2 justify-between items-center mx-auto my-6">
 					<Link href="/" className="flex p-4 z-20">
 							<Logo />
