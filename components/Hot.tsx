@@ -10,7 +10,7 @@ const Hot = () => {
 					<span className="text-yellow-500"><BsFire /></span>
 				</h1>
 			<div className="grid grid-cols-1 grid-rows-3 gap-2">
-				<div className="bg-serenade col-span-1 gap-3 items-start justify-start row-span-2 flex flex-col rounded-lg">
+				<div className="bg-serenade col-span-1 gap-3 items-start justify-start row-span-2 flex flex-col rounded-lg shadow-md shadow-slate-900/30">
 					<Image src="/blackfriday.jpg" alt="Hot" width={500} height={500} />
 					<h1 className="text-xl font-semibold p-2 text-center">How To 10x Your Sales This Black Friday</h1>
 					<div className="flex flex-col gap-1 p-2">
