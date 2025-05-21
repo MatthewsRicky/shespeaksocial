@@ -11,7 +11,7 @@ const Blog = () => {
 	      {posts.map((post) => (
 		      <div key={post.id} className="relative bg-white shadow-md shadow-slate-800 flex flex-col items-center justify-between h-[85%] w-[95%] text-start mx-auto rounded-md gap-4">
 			      <div className="relative flex items-center justify-start text-start w-full h-64 rounded-lg">
-				      <Image src={post.imageUrl} alt={post.imageAlt} width={500} height={500} className="absolute flex w-full justify-start h-full rounded-md" />
+				      <Image src={post.imageUrl} alt={post.imageAlt} width={400} height={300} className="absolute flex w-full justify-start h-full rounded-md" />
 				      <span className="absolute left-0 bottom-0 text-slate-100 bg-slate-900 hover:bg-deep-pink/70 px-2 py-1 rounded-md">{post.imageTitle}</span>
 			      </div>
 			      <div className="flex flex-col items-start justify-start gap-4 p-1 ">
