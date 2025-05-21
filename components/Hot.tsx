@@ -20,9 +20,9 @@ const Hot = () => {
 					<div className="bg-white col-span-1 row-span-1 flex m-1 rounded-md">
 						<div className="bg-white flex flex-col h-full items-start justify-start p-2 rounded-lg shadow-lg shadow-slate-900">
 							<div className="grid grid-cols-2 gap-2 w-full">
-								<Image src="/digital-marketing.jpg" alt="Our Picks" height={500} width={500} className="rounded-md flex w-full h-[70%]"/>
+								<Image src="/digital-marketing.jpg" alt="Our Picks" height={500} width={500} className="rounded-md flex w-full h-[70%] shadow-sm shadow-slate-900/60"/>
 								<section className="flex flex-col w-full justify-center gap-2">
-									<h1 className="font-medium leading-5 text-md">
+									<h1 className="font-medium text-sm">
 										How to Find and Share Your LinkedIn Profile Link for Easy Networking
 									</h1>
 									<h2 className="text-slate-800 font-regular">November 1, 2024</h2>
