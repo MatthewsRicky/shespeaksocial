@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Blog = () => {
 	return (
-		<main className="relative flex items-start gap-2 justify-center lg:w-[85%]">
+		<main className="relative flex items-start gap-2 justify-center lg:w-[90%] xl:w-[85%]">
       <section className="md:w-[70%] lg:w-[65%] xl:w-[50%] grid md:grid-cols-2 gap-1 items-center justify-center mt-48 lg:my-32">
 	      {posts.map((post) => (
 		      <div key={post.id} className="relative bg-white shadow-md shadow-slate-800 flex flex-col items-center justify-between h-[85%] w-[90%] xl:h-[95%] text-start mx-auto rounded-md  gap-4">
