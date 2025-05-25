@@ -1,8 +1,11 @@
+import Posts from '@/components/Posts'
 import React from 'react'
 
 const Page = () => {
 	return (
-		<main className="h-screen">This is a dynamic route for the posts to share</main>
+		<main className="h-screen">
+		<Posts />
+		</main>
 	)
 }
 export default Page
