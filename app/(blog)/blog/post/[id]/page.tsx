@@ -1,10 +1,13 @@
 import Posts from '@/components/Posts'
-import React from 'react'
+import React, {Suspense} from 'react'
 
 const Page = () => {
 	return (
 		<main className="h-screen">
-		<Posts />
+			<Suspense fallback={<div>Loading...</div>}>
+				<Posts />
+			</Suspense>
+
 		</main>
 	)
 }
