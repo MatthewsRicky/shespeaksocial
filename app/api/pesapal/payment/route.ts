@@ -1,5 +1,7 @@
 import {NextResponse} from "next/server";
 
+
+
 export async function POST(req: Request) {
 	try {
 		const { amount, email, phoneNumber, currency, description } = await req.json();
@@ -16,7 +18,7 @@ export async function POST(req: Request) {
 			payment_method: "M-PESA,VISA,PAYPAL", // ✅ Include supported methods
 		};
 
-		const response = await fetch(`${BASE_URL}/Transactions/SubmitOrderRequest`, {
+		const response = await fetch(`${process.env.NEXT_PUBLIC_PESAPAL_BASE_URL}/Transactions/SubmitOrderRequest`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -28,6 +30,6 @@ export async function POST(req: Request) {
 		const data = await response.json();
 		return NextResponse.json(data);
 	} catch (error) {
-		return NextResponse.json({ error: error.message }, { status: 500 });
+		return NextResponse.json({ error }, { status: 500 });
 	}
 }
