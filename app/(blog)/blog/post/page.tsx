@@ -9,7 +9,7 @@ export default async function Page() {
 
 	return (
 		<div className="flex h-screen">
-			{Array.isArray(posts) && posts.map((post) => (
+			{Array.isArray(posts) && posts.map((post ) => (
 				<div key={post.id} className="flex items-center justify-center text-black mt-48 flex-col">
 					<h1>{post.title}</h1>
 					<p>{post.description}</p>
