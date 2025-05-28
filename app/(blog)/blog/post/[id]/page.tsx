@@ -1,7 +1,7 @@
 import React from 'react'
 
-async function Page() {
-	const response = await fetch(`${process.env.CURRENTS_API_ENDPOINT}?apiKey=${process.env.CURRENTS_API_KEY}/1`)
+async function Page({ params }: { params: { id: string } }) {
+	const response = await fetch(`${process.env.CURRENTS_API_ENDPOINT}?apiKey=${process.env.CURRENTS_API_KEY}/${params.id}`)
 	const post = await response.json();
 	return (
 		<main className="flex h-screen ">
