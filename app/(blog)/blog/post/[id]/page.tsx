@@ -1,13 +1,25 @@
-import React from 'react'
+export default async function Page({ params, }:{params: Promise<{id : string}>}) {
+	const { id } = await params;
 
-async function Page({ params }: { params: { id: string } }) {
-	const response = await fetch(`${process.env.CURRENTS_API_ENDPOINT}?apiKey=${process.env.CURRENTS_API_KEY}/${params.id}`)
-	const post = await response.json();
+	const response = await fetch(`${process.env.CURRENTS_API_ENDPOINT}/${id}?apiKey=${process.env.CURRENTS_API_KEY}`)
+
+	if (!response.ok) {
+		console.error('Fetch failed:', response.status, response.statusText);
+	}
+
+
+	console.log(response)
+
+		const { post } = await response.json();
+		console.log(post);
+
+
 	return (
 		<main className="flex h-screen ">
-			<h1 key={post.id} className="flex items-center justify-center mx-auto text-xl font-bold mt-48">{post.title}</h1>
+			{Array.isArray(post) && post.map((post) => (
+				<h1 key={post.id} className="flex items-center justify-center mx-auto text-xl font-bold mt-48">{post.body}</h1>
+			))}
+
 		</main>
 	)
 }
-
-export default Page
